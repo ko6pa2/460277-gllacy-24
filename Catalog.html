@@ -33,6 +33,52 @@
 		</section>
 		<section>
 			<h1>Сливочное мороженое</h1>
+			<fieldset>
+				<form action="#" class="filter" method="POST">
+					<label for="sort">
+						<select name="sort" id="sort">
+							<option value="popular" selected>По популярности</option>
+							<option value="#">2</option>
+							<option value="#">3</option>
+						</select>
+					</label>
+					<label for="range">Цена:
+						<input id="range" type="range" min="300" max="5000" step="100">
+					</label>
+					<fieldset>
+							<label>0%
+								<input type="radio" value="0" name="fat">
+							</label>
+							<label>До 10%
+								<input type="radio" value="till-10" name="fat">
+							</label>
+							<label>До 30%
+								<input type="radio" value="till-30" name="fat">
+							</label>
+							<label>Выше 30%
+								<input type="radio" value="more-30" name="fat">
+							</label>
+					</fieldset>
+					<fieldset>
+						<label>	Шоколад
+							<input type="checkbox" name="Chocolate" value="Chocolate">
+						</label>
+						<label>Сахарные присыпки
+							<input type="checkbox" name="Sugar" value="Sugar">
+						</label>
+						<label>Фрукты
+							<input type="checkbox" name="Fruits" value="Fruits">
+						</label>
+						<label>Сироп
+							<input type="checkbox" name="Sirop" value="Sirop">
+						</label>
+						<label>Джем
+							<input type="checkbox" name="Jam" value="Jam">
+						</label>
+					</fieldset>
+					<input type="submit" value="Применить">
+				</form>
+		</fieldset>
 		</section>
 		<section>
 
@@ -112,7 +158,28 @@
 			</ul>
 		</section>
 		<section>
-			
+			<div class="paginator">
+				<ul>
+					<li>
+						<a href="#">1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#">4</a>
+					</li>
+					<li>
+						<a href="#">5</a>
+					</li>
+					<li>
+						<a href="#">></a>
+					</li>
+				</ul>
+			</div>
 		</section>
 	</main>
 
