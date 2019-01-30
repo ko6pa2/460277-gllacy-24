@@ -8,14 +8,14 @@ body{background-color:#849d8f;}
 .advantages > li:nth-child(3){list-style-image: url(../img/eco.svg);}
 .advantages > li:nth-child(4){list-style-image: url(../img/thermometer.svg);}
 /*----------фон для блока статьи------------*/
-.news{background: url('../img/Клубничный_фон.png') no-repeat;}
+.news{background: url('../img/background-strawberry.png') no-repeat;}
 /*----------обвадка для e-mail рассылки------------*/
-.distribution {background: url('../img/Почтовый-фон.png') no-repeat;}
+.distribution {background: url('../img/background-email-form.png') no-repeat;}
 /*----------svg для социальных кнопок------------*/
-.footer-social> ul > li:nth-child(1){list-style-image: url(../img/Тветер.svg);}
-.footer-social> ul > li:nth-child(2){list-style-image: url(../img/Инста.svg);}
-.footer-social> ul > li:nth-child(3){list-style-image: url(../img/ФБ.svg);}
-.footer-social> ul > li:nth-child(4){list-style-image: url(../img/ВК.svg);}
+.footer-social> ul > li:nth-child(1){list-style-image: url(../img/twitter.svg);}
+.footer-social> ul > li:nth-child(2){list-style-image: url(../img/instagram.svg);}
+.footer-social> ul > li:nth-child(3){list-style-image: url(../img/facebook.svg);}
+.footer-social> ul > li:nth-child(4){list-style-image: url(../img/vkontakte.svg);}
 /*----------svg для сердечка в футере------------*/
 .footer-navigation > ul > li:nth-child(1){list-style-image: url(../img/heart.svg);}
 	
