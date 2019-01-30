@@ -1,0 +1,21 @@
+
+body{background-color:#849d8f;}
+/*----------фон для блока с преимуществамик------------*/
+.advantages {background:url('../img/waffle-big.png') no-repeat;}
+/*----------svg для преимуществ------------*/
+.advantages > li:nth-child(1){list-style-image: url(../img/ice-cream.svg);}
+.advantages > li:nth-child(2){list-style-image: url(../img/cow.svg);}
+.advantages > li:nth-child(3){list-style-image: url(../img/eco.svg);}
+.advantages > li:nth-child(4){list-style-image: url(../img/thermometer.svg);}
+/*----------фон для блока статьи------------*/
+.news{background: url('../img/Клубничный_фон.png') no-repeat;}
+/*----------обвадка для e-mail рассылки------------*/
+.distribution {background: url('../img/Почтовый-фон.png') no-repeat;}
+/*----------svg для социальных кнопок------------*/
+.footer-social> ul > li:nth-child(1){list-style-image: url(../img/Тветер.svg);}
+.footer-social> ul > li:nth-child(2){list-style-image: url(../img/Инста.svg);}
+.footer-social> ul > li:nth-child(3){list-style-image: url(../img/ФБ.svg);}
+.footer-social> ul > li:nth-child(4){list-style-image: url(../img/ВК.svg);}
+/*----------svg для сердечка в футере------------*/
+.footer-navigation > ul > li:nth-child(1){list-style-image: url(../img/heart.svg);}
+	
