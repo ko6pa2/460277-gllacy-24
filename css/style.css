@@ -1,6 +1,21 @@
 
 body{background-color:#849d8f;}
-/*----------фон для блока с преимуществамик------------*/
+/*----------Сокрытие заголовков------------*/
+.visually-hidden{position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0px;
+padding: 0px;
+clip:rect(0 0 0 0);
+overflow: hidden;}
+
+.slide{
+	width: 1065px;
+
+	background: radial-gradient(white, transparent);
+}
+/*----------фон для блока с преимуществами------------*/
 .advantages {background:url('../img/waffle-big.png') no-repeat;}
 /*----------svg для преимуществ------------*/
 .advantages > li:nth-child(1){list-style-image: url(../img/ice-cream.svg);}
