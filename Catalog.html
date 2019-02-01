@@ -6,20 +6,57 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	
-	<header class="main-header">
+<header class="main-header">
 		<nav class="main-navigation">
-			<a class="logo" href="index.html">
+			<a class="logo" href="">
 				<img src="img/logo.svg" alt="GllacyShop" >
 			</a>
 			<ul class="site-navigation">
-				<li><a href="catalog.html">Каталог</a></li>
-				<li><a href="delivery.html"> Доставка и оплата</a></li>
-				<li><a href="about-us">О компании</a></li>
+				<li>
+					<a href="catalog.html">Каталог</a>
+					<ul>
+						<li>Новинки</li>
+						<li>
+							<a href="#">Сливочное</a>
+						</li>
+						<li>
+							<a href="#">Щербеты</a>
+						</li>
+						<li>
+							<a href="#">Фруктовый лед</a>
+						</li>
+						<li>
+							<a href="#">Мелорин</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="delivery.html"> Доставка и оплата</a>
+				</li>
+				<li>
+					<a href="about-us">О компании</a>
+				</li>
 			</ul>
+			<div>
+				<input class="search" type="search" name="search" placeholder="Что ищем?">
+				<p class="enter">Вход</p>
+				<form action="#" method="POST">
+					<input type="email" placeholder="Электронная почта" name="email">
+					<input type="password" name="password">
+					<input type="submit" name="submit" value="Войти">
+					<a href="#">Забыли пароль?</a>
+					<a href="#">Новая регистрация</a>
+				</form>
+				<div class="basket">
+					<p>Пусто</p>
+					<p>
+						<span>Итого:</span>
+						<input type="submit" value="Оформить заказ">
+					</p>
+				</div>
+			</div>
 		</nav>
 	</header>
-
 	<main>
 		<section>
 			<ul class="navigation">
@@ -185,19 +222,19 @@
 	</main>
 
 	<footer>
-		<div class="footer-social">
+	<div class="footer-social">
 			<ul>
 				<li>
-					<a href="#" class="social-button">Твиттер</a>
+					<a href="#" class="social-button" aria-label="Магазин глейси в твиттере">Твиттер</a>
 				</li>
 				<li>
-					<a href="#" class="social-button">Инстаграм</a>
+					<a href="#" class="social-button" aria-label="Магазин глейси в инстаграмме">Инстаграм</a>
 				</li>
 				<li>
-					<a href="#" class="social-button">Фейсбук</a>
+					<a href="#" class="social-button" aria-label="Магазин глейси в фейсбуке">Фейсбук</a>
 				</li>
 				<li>
-					<a href="#" class="social-button">Вконтакте</a>
+					<a href="#" class="social-button" aria-label="Магазин глейси во вконтакте">Вконтакте</a>
 				</li>
 			</ul>
 		</div>
