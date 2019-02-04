@@ -81,36 +81,34 @@
 					<label for="range">Цена:
 						<input id="range" type="range" min="300" max="5000" step="100">
 					</label>
-					<fieldset>
-							<label>0%
-								<input type="radio" value="0" name="fat">
-							</label>
-							<label>До 10%
-								<input type="radio" value="till-10" name="fat">
-							</label>
-							<label>До 30%
-								<input type="radio" value="till-30" name="fat">
-							</label>
-							<label>Выше 30%
-								<input type="radio" value="more-30" name="fat">
-							</label>
+					<fieldset class="fat-percent">
+							<input type="radio" id="zero" value="0" name="fat">
+							<label for="zero">0%</label>
+
+							<input type="radio" id="till-10" value="till-10" name="fat">
+							<label for="till-10">До 10%</label>
+
+							<input type="radio" id="till-30" value="till-30" name="fat">
+							<label for="till-30">До 30%</label>
+
+							<input type="radio" id="more-30" value="more-30" name="fat">
+							<label for="more-30">Выше 30%</label>
 					</fieldset>
-					<fieldset>
-						<label>	Шоколад
-							<input type="checkbox" name="Chocolate" value="Chocolate">
-						</label>
-						<label>Сахарные присыпки
-							<input type="checkbox" name="Sugar" value="Sugar">
-						</label>
-						<label>Фрукты
-							<input type="checkbox" name="Fruits" value="Fruits">
-						</label>
-						<label>Сироп
-							<input type="checkbox" name="Sirop" value="Sirop">
-						</label>
-						<label>Джем
-							<input type="checkbox" name="Jam" value="Jam">
-						</label>
+					<fieldset class="additives">
+						<input id="Chocolate" type="checkbox"  name="Chocolate" value="Chocolate">
+						<label for="Chocolate">Шоколад</label>
+
+						<input id="Sugar" type="checkbox" name="Sugar" value="Sugar">
+						<label for="Sugar">Сахарные присыпки</label>
+	
+						<input id="Fruits" type="checkbox" name="Fruits" value="Fruits">
+						<label for="Fruits">Фрукты</label>
+
+						<input id="Sirop" type="checkbox" name="Sirop" value="Sirop">
+						<label for="Sirop">Сироп</label>
+
+						<input id="Jam" type="checkbox" name="Jam" value="Jam">
+						<label for="Jam">Джем</label>
 					</fieldset>
 					<input type="submit" value="Применить">
 				</form>
@@ -132,7 +130,7 @@
 					</a>
 				</li>
 				<li>
-					<img src="img/ice-cream-3.png" alt="icecream" width="200" height="200">
+					<img src="img/ice-cream-3.png" alt="icecream">
 					<a href="#">
 						Сливочно-клубничное с присыпкой из белого шоколада
 					</a>
