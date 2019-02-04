@@ -47,20 +47,20 @@ overflow: hidden;}
 	background: url('../img/radio-off.svg'),#849d8f no-repeat;
 }
 .fat-percent input{
-position: relative;
+	position: relative;
 }
 .fat-percent input:checked +label:before{
 	background: url('../img/radio-on.svg'),#849d8f no-repeat;
 }
 .fat-percent input:focus::before{
-content:'';
-position:absolute;
-top:-6px;
-left:-8px;
-border:2px solid red;
-border-radius: 50%;
-width: 24px;
-height: 24px;
+	content:'';
+	position:absolute;
+	top:-6px;
+	left:-8px;
+	border:2px solid red;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
 }
 
 
@@ -83,13 +83,13 @@ height: 24px;
 	background: url('../img/checkbox-on.svg'),#849d8f no-repeat;
 }
 .additives input:focus::before{
-content:'';
-position:absolute;
-top:-4px;
-left:-6px;
-border:1px solid red;
-width: 20px;
-height: 20px;
+	content:'';
+	position:absolute;
+	top:-4px;
+	left:-6px;
+	border:1px solid red;
+	width: 20px;
+	height: 20px;
 }
 
 
