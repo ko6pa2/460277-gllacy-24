@@ -1,95 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic');
 
-body{background-color:#849d8f;}
-/*----------Сокрытие заголовков------------*/
-.visually-hidden{position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0px;
-padding: 0px;
-clip:rect(0 0 0 0);
-overflow: hidden;}
+body{
+	background-color:#849d8f;
+	font-family: Roboto;
+	font-size:18px;
+	line-height: 1.2em;
+	font-weight: bold;
+}
+form{
+	color:white;
+}
+ul{
+	list-style:none;
+}
 
+
+/*---------стилизация видимой части навигации-----------*/
+a {
+	color:white;
+	text-decoration: none;
+}
+
+.current-page{
+	color:black;
+	background-color: #d07058;
+	border-radius:25px;
+
+}
+.navigation-item{
+		color:black;
+		border-radius:25px;
+}
+.navigation-item:active,
+.navigation-item:hover {
+	background-color: white;
+	
+}
+
+/*---------стилизация скрытой части нав меню-----------*/
+
+.site-navigation{
+	font-weight: normal;
+}
+.site-navigation li a:hover + ul{
+	display:block;
+}
+.site-navigation li ul{
+	background-color: white;
+	display: none;
+}
+.site-navigation li ul:hover{
+	display: block;
+}
+.list-item{
+	color:black;
+}
+.list-item:hover {
+	background-color: #fbded7;
+}
+.list-item:focus {
+	background-color: #fbded7;
+}
+.list-item:active {
+	background-color: #f6b5a5;
+}
+
+/*---------прозрачный фон на слайдер-------*/
 .slide{
 	width: 1065px;
-
 	background: radial-gradient(white, transparent);
 }
-/*----------фон для блока с преимуществами------------*/
-.advantages {background:url('../img/waffle-big.png') no-repeat;}
-/*----------svg для преимуществ------------*/
-.advantages > li:nth-child(1){list-style-image: url(../img/ice-cream.svg);}
-.advantages > li:nth-child(2){list-style-image: url(../img/cow.svg);}
-.advantages > li:nth-child(3){list-style-image: url(../img/eco.svg);}
-.advantages > li:nth-child(4){list-style-image: url(../img/thermometer.svg);}
-/*----------фон для блока статьи------------*/
-.news{background: url('../img/background-strawberry.png') no-repeat;}
-/*----------обвадка для e-mail рассылки------------*/
-.distribution {background: url('../img/background-email-form.png') no-repeat;}
-/*----------svg для социальных кнопок------------*/
-.footer-social> ul > li:nth-child(1){list-style-image: url(../img/twitter.svg);}
-.footer-social> ul > li:nth-child(2){list-style-image: url(../img/instagram.svg);}
-.footer-social> ul > li:nth-child(3){list-style-image: url(../img/facebook.svg);}
-.footer-social> ul > li:nth-child(4){list-style-image: url(../img/vkontakte.svg);}
-/*----------svg для сердечка в футере------------*/
-.footer-navigation > ul > li:nth-child(1){list-style-image: url(../img/heart.svg);}
-
-/*---------------- форма, процент жира -----------------*/
-.fat-percent label{
+/*-- ПОИСК---*/
+.top-right-nav {
 	position: relative;
 }
-.fat-percent label:before{
+.search {
+	display: none;
+	position: absolute;
+	top: 18px;
+}
+.search:hover {
+	display: block;
+}
+img[alt="search"]:hover + input {
+	display: block;
+}
+/*----Свг хиг на изображение--*/
+
+.hot li {
+	position: relative;
+}
+.hot li:hover{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.hot li span::before {
+	content:"";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-image: url('../img/hit.svg');
+	background-repeat: no-repeat;
+	width: 100px;	height: 100px;
+}
+/*------ Прозрачный при наводке на "хит"-----*/
+.catalog-item li:hover{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+/*----------фон для блока с преимуществами------------*/
+
+.advantages {
+	background:url('../img/waffle-big.png') no-repeat;
+}
+
+/*----------svg для преимуществ------------*/
+
+.advantages > li:nth-child(1) {list-style-image: url(../img/ice-cream.svg);}
+.advantages > li:nth-child(2) {list-style-image: url(../img/cow.svg);}
+.advantages > li:nth-child(3) {list-style-image: url(../img/eco.svg);}
+.advantages > li:nth-child(4) {list-style-image: url(../img/thermometer.svg);}
+
+/*----------фон для блока статьи------------*/
+
+.news{background: url('../img/background-strawberry.png') no-repeat;}
+
+/*----------обв0дка для e-mail рассылки------------*/
+
+.distribution {background: url('../img/background-email-form.png') no-repeat;}
+
+/*----------svg для социальных кнопок------------*/
+
+.footer-social> ul > li:nth-child(1) {list-style-image: url(../img/twitter.svg);}
+.footer-social> ul > li:nth-child(2) {list-style-image: url(../img/instagram.svg);}
+.footer-social> ul > li:nth-child(3) {list-style-image: url(../img/facebook.svg);}
+.footer-social> ul > li:nth-child(4) {list-style-image: url(../img/vkontakte.svg);}
+
+/*----------svg для сердечка в футере------------*/
+
+.footer-navigation > ul > li:nth-child(1) {list-style-image: url(../img/heart.svg);}
+
+/*---------------- форма, процент жира -----------------*/
+
+.fat-percent label {
+	position: relative;
+}
+.fat-percent label:before {
 	content:'';
 	position: absolute;
 	width: 22px;
 	height: 22px;
-	left:-25px;
+	left: -25px;
 	background: url('../img/radio-off.svg'),#849d8f no-repeat;
 }
-.fat-percent input{
-	position: relative;
+.fat-percent input {
+		position: relative;
 }
-.fat-percent input:checked +label:before{
+.fat-percent input:checked +label:before {
 	background: url('../img/radio-on.svg'),#849d8f no-repeat;
 }
-.fat-percent input:focus::before{
-	content:'';
-	position:absolute;
-	top:-6px;
-	left:-8px;
-	border:2px solid red;
+.fat-percent input:focus::before {
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: -8px;
+	border: 2px solid red;
 	border-radius: 50%;
 	width: 24px;
 	height: 24px;
 }
 
-
 /*---------------- форма, добавки -----------------*/
-.additives label{
+
+.additives label {
 	position: relative;
 }
-.additives label::before{
+.additives label::before {
 	content:'';
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	left:-25px;
+	left: -25px;
 	background: url('../img/checkbox-off.svg'),#849d8f no-repeat;
 }
-.additives input{
+.additives input {
 	position: relative;
 }
-.additives input:checked + label::before{
+.additives input:checked + label::before {
 	background: url('../img/checkbox-on.svg'),#849d8f no-repeat;
 }
-.additives input:focus::before{
-	content:'';
+.additives input:focus::before {
+	content: '';
 	position:absolute;
-	top:-4px;
-	left:-6px;
-	border:1px solid red;
+	top: -4px;
+	left: -6px;
+	border: 1px solid red;
 	width: 20px;
 	height: 20px;
 }
+/*-----------------------кнопки для форм---------*/
 
+.style-button {
+	background-color: #e84d37;
+	padding: 12px;
+	border-radius: 20px;
+	border: 0px solid black;
+	color: white;
+}
+.style-button:hover {
+	background-color:#ffbc9e;
+}
+.style-button:active {
+	box-shadow: inset 0 2px 1px #696969;
+}
+/*----------Сокрытие заголовков------------*/
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0px;
+	padding: 0px;
+	clip:rect(0 0 0 0);
+	overflow: hidden;
+}
