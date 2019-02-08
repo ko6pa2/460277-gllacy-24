@@ -12,7 +12,8 @@ form{
 ul{
 	list-style:none;
 }
-h1{color:white;}
+h1{color:white;
+font-size: 35px;}
 .main-header{font-size:16px;}
 /*---------стилизация видимой части навигации-----------*/
 a {
