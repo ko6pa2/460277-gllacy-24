@@ -59,15 +59,15 @@
 		</nav>
 	</header>
 	<main>
-		<section>
-			<ul class="navigation">
-				<li>Главная</li>
-				<li>Каталог</li>
-				<li>Сливочное</li>
+		<section class="navigation">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Сливочное</a></li>
 			</ul>
 			<p> 
 				С 10 до 20, ежедневно<br>
-				8 812 450-25-25
+				<span class="bld">8 812 450-25-25</span>
 			</p>
 		</section>
 		<section>
@@ -75,6 +75,7 @@
 			<fieldset>
 				<form action="#" class="filter" method="POST">
 					<label for="sort">
+						<span>Сортировка:</span>
 						<select name="sort" id="sort">
 							<option value="popular" selected>По популярности</option>
 							<option value="#">2</option>
@@ -85,6 +86,7 @@
 						<input id="range" type="range" min="300" max="5000" step="100">
 					</label>
 					<fieldset class="fat-percent">
+							<span>Жирность:</span>
 							<input type="radio" id="zero" value="0" name="fat">
 							<label for="zero">0%</label>
 
@@ -98,6 +100,7 @@
 							<label for="more-30">Выше 30%</label>
 					</fieldset>
 					<fieldset class="additives">
+						<span>Наполнители</span>
 						<input id="chocolate" type="checkbox"  name="chocolate" value="chocolate">
 						<label for="chocolate">Шоколад</label>
 
@@ -113,7 +116,7 @@
 						<input id="jam" type="checkbox" name="jam" value="jam">
 						<label for="jam">Джем</label>
 					</fieldset>
-					<input class="style-button" type="submit" value="Применить">
+					<input class="button-form" type="submit" value="Применить">
 				</form>
 		</fieldset>
 		</section>
@@ -122,84 +125,96 @@
 			<ul class="catalog-item">
 				<li>
 					<img src="img/ice-cream-1.png" alt="icecream">
-					<a href="#">
+					<p class="cost">310₽/<small>кг</small></p>
+					<a href="#" class="link-ice-cream">
 						Сливочное с апельсиновым джемом и цитрусовой стружкой
 					</a>
 					<a class="style-button" href="#">Быстрый просмотр</a>
 				</li>
 				<li>	
 					<img src="img/ice-cream-2.png" alt="icecream">
-					<a href="#">
+					<p class="cost">380₽/<small>кг</small></p>
+					<a href="#" class="link-ice-cream">
 						Сливочно-кофейное с кусочками шоколада
 					</a>
 					<a class="style-button" href="#">Быстрый просмотр</a>
 				</li>
 				<li>
 					<img src="img/ice-cream-3.png" alt="icecream">
-					<a href="#">
+					<p class="cost">355₽/<small>кг</small></p>
+					<a href="#" class="link-ice-cream">
 						Сливочно-клубничное с присыпкой из белого шоколада
 					</a>
 					<a class="style-button" href="#">Быстрый просмотр</a>
 				</li>
 				<li>
 					<img src="img/ice-cream-4.png" alt="icecream">
-					<a href="#">
+					<p class="cost">415₽/<small>кг</small></p>
+					<a href="#" class="link-ice-cream">
 						Сливочное крем-брюле с карамельной посыпкой
 					</a>
 					<a class="style-button" href="#">Быстрый просмотр</a>
 				</li>
 				<li>
 					<img src="img/ice-cream-5.png" alt="icecream">
-					<a href="#">
+					<p class="cost">325₽/<small>кг</small></p>
+					<a href="#" class="link-ice-cream">
 						Сливочное с бруничным джемом
 					</a>
 					<a class="style-button" href="#">Быстрый просмотр</a>
 				</li>
 				<li>
 					<img src="img/ice-cream-6.png" alt="icecream">
-					<a href="#">
+					<p class="cost">410₽/<small>кг</small></p>
+					<a href="#" class="link-ice-cream">
 						Сливочное-черничное с цельными ягодами черники
 					</a>
 					<a class="style-button" href="#">Быстрый просмотр</a>
 				</li>
 				<li>
 					<img src="img/ice-cream-7.png" alt="icecream">
-					<a href="#">
+					<p class="cost">375₽/<small>кг</small></p>
+					<a href="#" class="link-ice-cream">
 						Сливочно-лимонное с карамельной присыпкой
 					</a>
 					<a class="style-button" href="#">Быстрый просмотр</a>
 				</li>
 				<li>
 					<img src="img/ice-cream-8.png" alt="icecream">
-					<a href="#">
+					<p class="cost">320₽/<small>кг</small></p>
+					<a href="#" class="link-ice-cream">
 						Сливочное с шоколадной стружкой
 					</a>
 					<a class="style-button" href="#">Быстрый просмотр</a>
 				</li>
 				<li>
 					<img src="img/ice-cream-9.png" alt="icecream">
-					<a href="#">
+					<p class="cost">440₽/<small>кг</small></p>
+					<a href="#" class="link-ice-cream">
 						Сливочно-ванильное с кусочками шоколада
 					</a>
 					<a class="style-button" href="#">Быстрый просмотр</a>
 				</li>
 				<li>
 					<img src="img/ice-cream-10.png" alt="icecream">
-					<a href="#">
+					<p class="cost">435₽/<small>кг</small></p>
+					<a href="#" class="link-ice-cream">
 						Сливочное с ментоловым сиропом
 					</a>
 					<a class="style-button" href="#">Быстрый просмотр</a>
 				</li>
 				<li>
 					<img src="img/ice-cream-11.png" alt="icecream">
-					<a href="#">	
+					<p class="cost">355₽/<small>кг</small></p>
+					<a href="#" class="link-ice-cream">	
 						Сливочное с кусочками черного шоколада
 					</a>
 					<a class="style-button" href="#">Быстрый просмотр</a>
 				</li>
 				<li>
 					<img src="img/ice-cream-12.png" alt="icecream">
-					<a href="#">
+					<p class="cost">420₽/<small>кг</small></p>
+					<a href="#" class="link-ice-cream">
 						Сливочное с мятным сиропом
 					</a>
 					<a class="style-button" href="#">Быстрый просмотр</a>
@@ -236,16 +251,16 @@
 	<div class="footer-social">
 			<ul>
 				<li>
-					<a href="#" class="social-button" aria-label="Магазин глейси в твиттере">Твиттер</a>
+					<a href="#" class="social-button" aria-label="Магазин глейси в твиттере"></a>
 				</li>
 				<li>
-					<a href="#" class="social-button" aria-label="Магазин глейси в инстаграмме">Инстаграм</a>
+					<a href="#" class="social-button" aria-label="Магазин глейси в инстаграмме"></a>
 				</li>
 				<li>
-					<a href="#" class="social-button" aria-label="Магазин глейси в фейсбуке">Фейсбук</a>
+					<a href="#" class="social-button" aria-label="Магазин глейси в фейсбуке"></a>
 				</li>
 				<li>
-					<a href="#" class="social-button" aria-label="Магазин глейси во вконтакте">Вконтакте</a>
+					<a href="#" class="social-button" aria-label="Магазин глейси во вконтакте"></a>
 				</li>
 			</ul>
 		</div>

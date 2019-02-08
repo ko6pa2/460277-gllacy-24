@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic');
 
 body{
+	width: 1200px;
 	background-color:#849d8f;
 	font-family: Roboto;
-	font-size:18px;
 	line-height: 1.2em;
-	font-weight: bold;
 }
 form{
 	color:white;
@@ -13,12 +12,11 @@ form{
 ul{
 	list-style:none;
 }
-
-
+h1{color:white;}
+.main-header{font-size:16px;}
 /*---------стилизация видимой части навигации-----------*/
 a {
 	color:white;
-	text-decoration: none;
 }
 
 .current-page{
@@ -28,12 +26,13 @@ a {
 
 }
 .navigation-item{
-		color:black;
+		color:white;
 		border-radius:25px;
 }
 .navigation-item:active,
 .navigation-item:hover {
 	background-color: white;
+	color:black;
 	
 }
 
@@ -65,11 +64,6 @@ a {
 	background-color: #f6b5a5;
 }
 
-/*---------прозрачный фон на слайдер-------*/
-.slide{
-	width: 1065px;
-	background: radial-gradient(white, transparent);
-}
 /*-- ПОИСК---*/
 .top-right-nav {
 	position: relative;
@@ -85,6 +79,45 @@ a {
 img[alt="search"]:hover + input {
 	display: block;
 }
+/*----- ENTER -----*/
+.enter{
+	font-size: 14px;
+font-weight: medium;
+}
+/*----- basket ----*/
+.basket {
+	font-size: 14px;
+font-weight: medium
+;}
+/*---------прозрачный фон на слайдер-------*/
+.slide{
+	width: 1065px;
+	background: radial-gradient(white, transparent);
+}
+/*----кнопка на слайер---*/
+.slide a{font-size: 32px;
+font-weight: bold;
+line-height: 1,375em;
+padding: 20px 40px 20px;
+border-radius: 40px;}
+/*----- slider ----*/
+
+.slider p{font-size: 22px;}
+.slider p span{font-size: 14px;}
+.slider {
+	color: white;
+}
+.slider img + p{
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 1em;
+}
+/*------ размер шрифта блокам с подарками------*/
+.gift{font-weight: bold;
+color:white;}
+.gift h2{font-size: 35px;
+}
+.gift p{font-size: 18px;}
 /*----Свг хиг на изображение--*/
 
 .hot li {
@@ -106,38 +139,122 @@ img[alt="search"]:hover + input {
 .catalog-item li:hover{
 	background-color: rgba(255, 255, 255, 0.2);
 }
-/*----------фон для блока с преимуществами------------*/
-
-.advantages {
+/*--------- ссылки у мороженого, шрифты для ценника-------*/
+.cost{color:white;
+font-size: 45px;
+line-height: 1em;
+font-weight: bold;}
+.link-ice-cream{
+	font-size: 16px;
+	font-weight: medium;
+	text-decoration: underline;
+}
+/*----------блок с преимуществами------------*/
+.advantages{
 	background:url('../img/waffle-big.png') no-repeat;
+}
+.advantages-header{ 
+	font-size: 24px;
+	font-weight: medium;
+	
+ }
+.advantages-item {
+	font-size: 16px;
+	font-weight: normal;
 }
 
 /*----------svg для преимуществ------------*/
 
-.advantages > li:nth-child(1) {list-style-image: url(../img/ice-cream.svg);}
-.advantages > li:nth-child(2) {list-style-image: url(../img/cow.svg);}
-.advantages > li:nth-child(3) {list-style-image: url(../img/eco.svg);}
-.advantages > li:nth-child(4) {list-style-image: url(../img/thermometer.svg);}
+.advantages-item > li:nth-child(1) {
+	list-style-image: url(../img/ice-cream.svg);}
+.advantages-item > li:nth-child(2) {
+	list-style-image: url(../img/cow.svg);}
+.advantages-item > li:nth-child(3) {
+	list-style-image: url(../img/eco.svg);}
+.advantages-item > li:nth-child(4) {
+	list-style-image: url(../img/thermometer.svg);}
 
-/*----------фон для блока статьи------------*/
+/*----------Блок с новой статьёй------------*/
 
-.news{background: url('../img/background-strawberry.png') no-repeat;}
+.news{
+	background: url('../img/background-strawberry.png') no-repeat;
+}
+.news h2{
+	font-size: 16px;
+	font-weight: medium;
+}
+.news p{
+	text-decoration: underline;
+	font-size: 24px;
+	font-weight: bold;
+}
 
-/*----------обв0дка для e-mail рассылки------------*/
+/*---------- block e-mail рассылки------------*/
 
-.distribution {background: url('../img/background-email-form.png') no-repeat;}
+.distribution p {
+	font-size: 16px;
+	font-weight: normal;
+	color: #5a5a5a;
+}
 
+.distribution {
+	background: url('../img/background-email-form.png') no-repeat;
+}
+/*------ map block -----*/
+.map p{font-size:14px;}
+.map .info{background-color: white;}
 /*----------svg для социальных кнопок------------*/
 
-.footer-social> ul > li:nth-child(1) {list-style-image: url(../img/twitter.svg);}
-.footer-social> ul > li:nth-child(2) {list-style-image: url(../img/instagram.svg);}
-.footer-social> ul > li:nth-child(3) {list-style-image: url(../img/facebook.svg);}
-.footer-social> ul > li:nth-child(4) {list-style-image: url(../img/vkontakte.svg);}
+.footer-social> ul > li:nth-child(1) {
+	list-style-image: url(../img/twitter.svg);}
+.footer-social> ul > li:nth-child(2) {
+	list-style-image: url(../img/instagram.svg);}
+.footer-social> ul > li:nth-child(3) {
+	list-style-image: url(../img/facebook.svg);}
+.footer-social> ul > li:nth-child(4) {
+	list-style-image: url(../img/vkontakte.svg);}
 
-/*----------svg для сердечка в футере------------*/
-
-.footer-navigation > ul > li:nth-child(1) {list-style-image: url(../img/heart.svg);}
-
+/*----------navig в футере------------*/
+.footer-navigation {
+	font-weight:normal ;
+	font-size: 13px;
+}
+.footer-navigation p{
+	font-weight:bold:; ;
+	font-size: 13px;
+}
+.bld{font-size: 24px;
+font-weight: bold;}
+.footer-navigation > li:nth-child(1) {
+	font-weight: bold;
+	list-style-image: url(../img/heart.svg);
+}
+/*------------ html logo footer -------*/
+.logo-html-academy {
+	font-size: 12px
+	font-weight: normal;
+	color: white;
+}
+/*--- nav catalog ----*/
+.navigation {color:white;
+font-size: 14px;
+font-weight: normal;}
+/*----- form styles ----*/
+.filter fieldset
+{background-color: #aabcb2;}
+.filter{
+	font-size: 16px;
+	font-weight: medium;
+}
+.button-form{
+	background-color: #a6b7ae;
+	padding: 5px 10px 5px;
+	border-radius: 20px;
+	border: 2px solid #ffffff;
+	color: white;
+	font-size: 16px;
+	font-weight: medium;
+}
 /*---------------- форма, процент жира -----------------*/
 
 .fat-percent label {
@@ -196,6 +313,8 @@ img[alt="search"]:hover + input {
 	width: 20px;
 	height: 20px;
 }
+/*------- paginator catalog -------*/
+.paginator a{text-decoration: none;}
 /*-----------------------кнопки для форм---------*/
 
 .style-button {
@@ -204,6 +323,8 @@ img[alt="search"]:hover + input {
 	border-radius: 20px;
 	border: 0px solid black;
 	color: white;
+	font-size: 18px;
+	text-decoration: none;
 }
 .style-button:hover {
 	background-color:#ffbc9e;
@@ -222,4 +343,11 @@ img[alt="search"]:hover + input {
 	padding: 0px;
 	clip:rect(0 0 0 0);
 	overflow: hidden;
+}
+/*----- popup ----*/
+.location{background-color: white;}
+.location span{
+	color: black;
+	font-size: 24px;
+	font-weight: medium;
 }
