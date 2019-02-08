@@ -1,59 +1,104 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic');
 
-body{
+body {
 	width: 1200px;
-	background-color:#849d8f;
+	background-color: #849d8f;
 	font-family: Roboto;
-	line-height: 1.2em;
+	margin: 0px auto;
 }
-form{
-	color:white;
+
+
+
+form {
+	color: white;
 }
 ul{
-	list-style:none;
+	list-style: none;
 }
-h1{color:white;
-font-size: 35px;}
-.main-header{font-size:16px;}
+
+.container {
+	width: 1150px;
+	margin: 20px auto;
+}
+.main-header{
+font-size: 16px;
+}
+
+/*-----Стили для инпутов----*/
+input {
+	border-radius: 5px;
+}
+input:hover {
+	border-color: #c7c6c5;
+}
+input:focus {
+	border-color: #8fbdec;
+}
+/*----- header -----*/
+.main-navigation {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row
+
+}
+.top-left-nav{}
+/*---- logotype -*/
+
+.logo {
+	width: 153px;
+	height: 72px;
+}
 /*---------стилизация видимой части навигации-----------*/
 a {
-	color:white;
+	text-decoration:none;
+	color: white;
 }
 
 .current-page{
-	color:black;
+	color: black;
 	background-color: #d07058;
-	border-radius:25px;
-
+	border-radius: 25px;
 }
-.navigation-item{
-		color:white;
-		border-radius:25px;
+
+.navigation-item {
+	margin-left: 20px;
+	padding:10px;
+	color: white;
+	border-radius: 25px;
 }
 .navigation-item:active,
 .navigation-item:hover {
 	background-color: white;
-	color:black;
-	
+	color: black;
 }
 
 /*---------стилизация скрытой части нав меню-----------*/
 
-.site-navigation{
+.site-navigation {
+	text-decoration:none;
 	font-weight: normal;
 }
-.site-navigation li a:hover + ul{
-	display:block;
+.site-navigation li{
+
+	text-decoration:none;
+	font-weight: normal;
 }
-.site-navigation li ul{
+.site-navigation li a:hover + ul {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+.site-navigation li ul {
 	background-color: white;
 	display: none;
 }
-.site-navigation li ul:hover{
+.site-navigation li ul:hover {
 	display: block;
+	margin: 0px;
+	padding: 0px;
 }
 .list-item{
-	color:black;
+	color: black;
 }
 .list-item:hover {
 	background-color: #fbded7;
@@ -64,7 +109,6 @@ a {
 .list-item:active {
 	background-color: #f6b5a5;
 }
-
 /*-- ПОИСК---*/
 .top-right-nav {
 	position: relative;
@@ -80,86 +124,176 @@ a {
 img[alt="search"]:hover + input {
 	display: block;
 }
+
 /*----- ENTER -----*/
+
 .enter{
+	line-height: 16px;
 	font-size: 14px;
-font-weight: medium;
+	font-weight: medium;
+}
+.enter-form {
+	display: none;
 }
 /*----- basket ----*/
+
 .basket {
+	line-height: 16px;
 	font-size: 14px;
-font-weight: medium
+	font-weight: medium
 ;}
+
 /*---------прозрачный фон на слайдер-------*/
+
 .slide{
 	width: 1065px;
 	background: radial-gradient(white, transparent);
 }
+
 /*----кнопка на слайер---*/
-.slide a{font-size: 32px;
-font-weight: bold;
-line-height: 1,375em;
-padding: 20px 40px 20px;
-border-radius: 40px;}
+
+.slide a {
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 44px;
+	padding: 20px 40px 20px;
+	border-radius: 40px;
+}
+
 /*----- slider ----*/
 
-.slider p{font-size: 22px;}
-.slider p span{font-size: 14px;}
+.slider p {
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: bold;
+}
+.slider p span {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+}
 .slider {
 	color: white;
 }
-.slider img + p{
+.slider img + p {
 	font-size: 60px;
 	font-weight: bold;
-	line-height: 1em;
+	line-height: 60.35px;
 }
 /*------ размер шрифта блокам с подарками------*/
-.gift{font-weight: bold;
-color:white;}
-.gift h2{font-size: 35px;
+.gift {
+	font-weight: bold;
+	color:white;
 }
-.gift p{font-size: 18px;}
+.gift h2 {line-height: 41px;
+	font-weight: bold;
+	font-size: 35px;
+}
+.gift p {line-height: 22px;
+	font-weight: bold;
+	font-size: 18px;
+}
 /*----Свг хиг на изображение--*/
 
+	
 .hot li {
+	text-align: center;
+	vertical-align: middle;
+	width: 270px;
+	height: 405px;
 	position: relative;
+	display:inline-block;
 }
-.hot li:hover{
+.hot li p {
+	position: absolute;
+	top: 220px;
+	left: 20px;
+	padding: 0px;
+	margin: 0px;
+}
+.hot li .style-button {
+	position: absolute;
+	top:345px;
+	left:40px;
+	display: none;
+}
+.hot li:hover > .style-button{
+	display: inline;
+}
+
+
+.hot li:hover {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 .hot li span::before {
-	content:"";
+	content: "";
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	background-image: url('../img/hit.svg');
 	background-repeat: no-repeat;
-	width: 100px;	height: 100px;
+	width: 100px;
+	height: 100px;
 }
+
+
 /*------ Прозрачный при наводке на "хит"-----*/
-.catalog-item li:hover{
+
+
+.catalog-item li {
+	text-align: center;
+	vertical-align:middle;
+	width: 270px;
+	height: 405px;
+	display:inline-block;
+	position: relative;
+}
+
+.catalog-item li p {
+	position: absolute;
+	top:220px;
+	left:20px;
+	padding: 0px;
+	margin: 0px;
+}
+.catalog-item li .style-button{
+	position: absolute;
+	top:345px;
+	left:40px;
+	display: none;
+}
+.catalog-item li:hover {
 	background-color: rgba(255, 255, 255, 0.2);
 }
+.catalog-item li:hover > .style-button{
+	display: inline;
+}
+
 /*--------- ссылки у мороженого, шрифты для ценника-------*/
-.cost{color:white;
-font-size: 45px;
-line-height: 1em;
-font-weight: bold;}
-.link-ice-cream{
+.cost {
+	color:white;
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: bold;
+}
+.link-ice-cream {
 	font-size: 16px;
 	font-weight: medium;
+	line-height: 22px;
 	text-decoration: underline;
 }
 /*----------блок с преимуществами------------*/
-.advantages{
-	background:url('../img/waffle-big.png') no-repeat;
+.advantages {
+	background: url('../img/waffle-big.png') no-repeat;
 }
-.advantages-header{ 
+.advantages-header { 
+	line-height: 30px;
 	font-size: 24px;
 	font-weight: medium;
 	
  }
 .advantages-item {
+	line-height: 22px;
 	font-size: 16px;
 	font-weight: normal;
 }
@@ -180,13 +314,14 @@ font-weight: bold;}
 .news{
 	background: url('../img/background-strawberry.png') no-repeat;
 }
-.news h2{
+.news h2{line-height: 22px;
 	font-size: 16px;
 	font-weight: medium;
 }
 .news p{
 	text-decoration: underline;
 	font-size: 24px;
+	line-height: 30px;
 	font-weight: bold;
 }
 
@@ -195,6 +330,7 @@ font-weight: bold;}
 .distribution p {
 	font-size: 16px;
 	font-weight: normal;
+	line-height: 22px;
 	color: #5a5a5a;
 }
 
@@ -202,9 +338,40 @@ font-weight: bold;}
 	background: url('../img/background-email-form.png') no-repeat;
 }
 /*------ map block -----*/
-.map p{font-size:14px;}
-.map .info{background-color: white;}
+.map p {
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: normal;
+}
+.map p {
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: normal;
+}
+.map p span{
+	line-height: 24px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.map .info {
+	background-color: white;
+}
 /*----------svg для социальных кнопок------------*/
+.footer-social{
+	width: 265px;
+	height: 105px;
+	background-color: red;
+}
+.footer-social ul{
+	display: flex;
+	justify-content: flex-start;
+
+}
+.footer-social ul li{
+	margin-left:15px;
+	text-align: center;
+}
 
 .footer-social> ul > li:nth-child(1) {
 	list-style-image: url(../img/twitter.svg);}
@@ -216,44 +383,90 @@ font-weight: bold;}
 	list-style-image: url(../img/vkontakte.svg);}
 
 /*----------navig в футере------------*/
-.footer-navigation {
-	font-weight:normal ;
-	font-size: 13px;
+.footer-navigation{
+	width: 560px;
+	height: 105px;
+	background-color: red;
 }
-.footer-navigation p{
-	font-weight:bold:; ;
+.footer-list {
+	font-weight: normal ;
 	font-size: 13px;
+	line-height: 18px;
 }
-.bld{font-size: 24px;
-font-weight: bold;}
-.footer-navigation > li:nth-child(1) {
+.bld-number {
+	line-height: 24px;
+	font-size: 22px;
+	font-weight: bold;
+}
+.footer-list > li:nth-child(1) {
 	font-weight: bold;
 	list-style-image: url(../img/heart.svg);
 }
 /*------------ html logo footer -------*/
-.logo-html-academy {
-	font-size: 12px
+.logo-html-academy p {
+	font-size: 12px;
+	line-height: 18px;
 	font-weight: normal;
 	color: white;
 }
 /*--- nav catalog ----*/
-.navigation {color:white;
-font-size: 14px;
-font-weight: normal;}
+.navigation {
+	color: white;
+	line-height: 16px;
+	font-size: 14px;
+	font-weight: normal;
+}
+body main section h1{
+	line-height: 41px;
+	color: white;
+	font-size: 35px;
+}
 /*----- form styles ----*/
-.filter fieldset
-{background-color: #aabcb2;}
-.filter{
-	font-size: 16px;
+
+.filter {
+	line-height: 16px;
+	font-size: 14px;
 	font-weight: medium;
 }
-.button-form{
+
+.filter select {
+	padding: 15px;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: medium;
+	border-radius: 25px;
+	background-color: #aabcb2;
+	color:white;
+
+}
+.filter select:hover,
+.filter select:focus {
+	color: black;
+	outline: none;
+	border: 1px black solid;
+}
+
+.filter select option {
+	padding: 15px;
+}
+.filter fieldset {
+	padding: 15px;
+	border: 0px black solid;
+	border-radius: 25px;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: medium;
+	background-color: #aabcb2;
+}
+
+.button-form {
 	background-color: #a6b7ae;
 	padding: 5px 10px 5px;
 	border-radius: 20px;
 	border: 2px solid #ffffff;
 	color: white;
 	font-size: 16px;
+	line-height: 18px;
 	font-weight: medium;
 }
 /*---------------- форма, процент жира -----------------*/
@@ -307,15 +520,26 @@ font-weight: normal;}
 }
 .additives input:focus::before {
 	content: '';
-	position:absolute;
+	position: absolute;
 	top: -4px;
 	left: -6px;
 	border: 1px solid red;
 	width: 20px;
 	height: 20px;
 }
+
 /*------- paginator catalog -------*/
-.paginator a{text-decoration: none;}
+.paginator{
+	display: flex;
+	justify-content: flex-end;
+}
+.paginator li {
+	padding: 5px;
+	background-color: black;
+}
+.paginator a {
+	text-decoration: none;
+}
 /*-----------------------кнопки для форм---------*/
 
 .style-button {
@@ -325,10 +549,12 @@ font-weight: normal;}
 	border: 0px solid black;
 	color: white;
 	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
 	text-decoration: none;
 }
 .style-button:hover {
-	background-color:#ffbc9e;
+	background-color: #ffbc9e;
 }
 .style-button:active {
 	box-shadow: inset 0 2px 1px #696969;
@@ -342,13 +568,25 @@ font-weight: normal;}
 	margin: -1px;
 	border: 0px;
 	padding: 0px;
-	clip:rect(0 0 0 0);
+	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
 /*----- popup ----*/
-.location{background-color: white;}
-.location span{
+.location {
+	background-color: white;
+}
+.location span {
 	color: black;
 	font-size: 24px;
+	line-height: 28px;
 	font-weight: medium;
+}
+footer {
+	display: flex;
+	justify-content: space-between;
+}
+footer .footer-navigation + div {
+	width: 265px;
+	height: 105px;
+	background-color: red;
 }
