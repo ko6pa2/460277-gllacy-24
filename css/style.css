@@ -161,6 +161,11 @@ img[alt="search"]:hover + input {
 }
 
 /*----- slider ----*/
+.second-slide{
+	display: none;
+}.third-slide{
+	display: none;
+}
 
 .slider p {
 	font-size: 22px;
@@ -180,16 +185,30 @@ img[alt="search"]:hover + input {
 	font-weight: bold;
 	line-height: 60.35px;
 }
+
 /*------ размер шрифта блокам с подарками------*/
 .gift {
+	width:560px; 
+	height:235px;
 	font-weight: bold;
 	color:white;
 }
-.gift h2 {line-height: 41px;
+.gift:nth-child(1){
+	background-image:url('../img/malinka.png');
+	background-repeat: no-repeat;
+}
+.gift:nth-child(2){
+	background-image:url('../img/chocolate.png');
+	background-repeat: no-repeat;
+	margin-left: 25px;
+}
+.gift h2 {
+	line-height: 41px;
 	font-weight: bold;
 	font-size: 35px;
 }
-.gift p {line-height: 22px;
+.gift p {
+	line-height: 22px;
 	font-weight: bold;
 	font-size: 18px;
 }
@@ -311,14 +330,17 @@ img[alt="search"]:hover + input {
 
 /*----------Блок с новой статьёй------------*/
 
-.news{
+.news {
+	width: 560px;
+	height: 225px;
 	background: url('../img/background-strawberry.png') no-repeat;
 }
-.news h2{line-height: 22px;
+.news h2 {
+	line-height: 22px;
 	font-size: 16px;
 	font-weight: medium;
 }
-.news p{
+.news p {
 	text-decoration: underline;
 	font-size: 24px;
 	line-height: 30px;
@@ -326,7 +348,11 @@ img[alt="search"]:hover + input {
 }
 
 /*---------- block e-mail рассылки------------*/
-
+.distribution{
+	width: 560px;
+	height: 225px;
+	margin-left: 25px;
+}
 .distribution p {
 	font-size: 16px;
 	font-weight: normal;
@@ -338,6 +364,12 @@ img[alt="search"]:hover + input {
 	background: url('../img/background-email-form.png') no-repeat;
 }
 /*------ map block -----*/
+.map {
+	margin: 0 0 0 -40px;
+	height: 430px;
+	width: 1200px;
+	position: relative;
+}
 .map p {
 	line-height: 20px;
 	font-size: 14px;
@@ -353,15 +385,25 @@ img[alt="search"]:hover + input {
 	font-size: 18px;
 	font-weight: bold;
 }
-
+.info {
+	position: absolute;
+}
 .map .info {
+	margin: 60px 30px 60px 840px;
+	padding-top: 35px;
+	padding-left: 30px;
+	border-radius: 20px;
+	height: 305px;
+	width: 300px;
 	background-color: white;
+	text-align: left;
+	vertical-align: middle;
 }
 /*----------svg для социальных кнопок------------*/
 .footer-social{
-	width: 265px;
-	height: 105px;
-	background-color: red;
+	margin: 40px;
+	width: 190px;
+	height: 55px;
 }
 .footer-social ul{
 	display: flex;
@@ -369,6 +411,8 @@ img[alt="search"]:hover + input {
 
 }
 .footer-social ul li{
+	width: 35px;
+	height: 35px;
 	margin-left:15px;
 	text-align: center;
 }
@@ -386,7 +430,6 @@ img[alt="search"]:hover + input {
 .footer-navigation{
 	width: 560px;
 	height: 105px;
-	background-color: red;
 }
 .footer-list {
 	font-weight: normal ;
@@ -398,7 +441,8 @@ img[alt="search"]:hover + input {
 	font-size: 22px;
 	font-weight: bold;
 }
-.footer-list > li:nth-child(1) {
+
+.footer-list li:nth-child(1) {
 	font-weight: bold;
 	list-style-image: url(../img/heart.svg);
 }
@@ -411,6 +455,8 @@ img[alt="search"]:hover + input {
 }
 /*--- nav catalog ----*/
 .navigation {
+	display: flex;
+	justify-content: space-between;
 	color: white;
 	line-height: 16px;
 	font-size: 14px;
@@ -559,6 +605,10 @@ body main section h1{
 .style-button:active {
 	box-shadow: inset 0 2px 1px #696969;
 }
+/*----- flex-block ----*/
+.flex-block {
+	display: flex;
+}
 /*----------Сокрытие заголовков------------*/
 
 .visually-hidden {
@@ -588,5 +638,4 @@ footer {
 footer .footer-navigation + div {
 	width: 265px;
 	height: 105px;
-	background-color: red;
 }
