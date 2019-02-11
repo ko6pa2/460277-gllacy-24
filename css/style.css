@@ -184,7 +184,7 @@ a {
 /*---------прозрачный фон на слайдер-------*/
 
 .slide{
-	width: 1065px;
+	
 	background: radial-gradient(rgba(255,255,255,0.4), transparent);
 }
 
@@ -216,13 +216,26 @@ a {
 	font-weight: bold;
 }
 .slider {
+	position: relative;
 	color: white;
 }
-.slider img + p {
+.slider img{
+	display:block;
+	margin: 0px auto;
+}
+.slider div + p {
+	position: absolute;
+	top:50%;
+	left:25%;
+	width: 670px;
 	font-size: 60px;
 	font-weight: bold;
 	line-height: 60.35px;
 }
+.slide p + a{
+	position: absolute;
+	top:80%;
+	left:40%;}
 
 /*------ размер шрифта блокам с подарками------*/
 .gift {
@@ -240,12 +253,12 @@ a {
 	background-repeat: no-repeat;
 	margin-left: 25px;
 }
-.gift h2 {
+.gift h2 {margin: 10px;
 	line-height: 41px;
 	font-weight: bold;
 	font-size: 35px;
 }
-.gift p {
+.gift p {margin: 10px;
 	line-height: 22px;
 	font-weight: bold;
 	font-size: 18px;
@@ -382,7 +395,7 @@ flex-wrap: wrap;
 
 /*----------Блок с новой статьёй------------*/
 
-.news {
+.news {padding:10px;
 	width: 560px;
 	height: 225px;
 	background: url('../img/background-strawberry.png') no-repeat;
@@ -393,6 +406,7 @@ flex-wrap: wrap;
 	font-weight: 500;
 }
 .news p {
+	width: 290px;
 	text-decoration: underline;
 	font-size: 24px;
 	line-height: 30px;
@@ -413,7 +427,7 @@ flex-wrap: wrap;
 }
 
 .distribution {
-	background: url('../img/background-email-form.png') no-repeat;
+background:  repeating-linear-gradient( 135deg, white 0px, white 10px, #92cdff 10px, #92cdff 20px,#fe9e90 20px, #fe9e90 30px);
 }
 /*------ map block -----*/
 .map {
@@ -644,10 +658,21 @@ body main section h1{
 	justify-content: flex-end;
 }
 .paginator li {
-	padding: 5px;
-	background-color: black;
+	padding:5px 10px;
+	border-radius: 25px;
 }
+.paginator li:hover {
+	background-color: #aabcb2;;
+}
+.paginator li:active{
+	background-color:white;
+}
+
+
 .paginator a {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
 	text-decoration: none;
 }
 /*-----------------------кнопки для форм---------*/
