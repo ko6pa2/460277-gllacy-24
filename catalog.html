@@ -10,9 +10,12 @@
 		<header class="main-header">
 		<nav class="main-navigation">
 			<div class="top-left-nav">
-				<a href="index.html">
-					<img class="logo" src="img/logo.svg" alt="GllacyShop" >
-				</a>
+				<div class="block-logo">
+					<a href="index.html">
+						<img class="logo" src="img/logo.svg" alt="GllacyShop" >
+					</a>
+				</div>
+				<div class="block-list">
 				<ul class="site-navigation">
 					<li>
 						<a class="navigation-item current-page" href="catalog.html">Каталог</a>
@@ -39,10 +42,11 @@
 						<a class="navigation-item" href="about-us">О компании</a>
 					</li>
 				</ul>
+				</div>
 			</div>
 			<div class="top-right-nav">
-				<img src="img/loupe.svg" alt="search">
-				<input class="search" type="search" name="search" placeholder="Что ищем?">
+				<a href="#" class="search"></a>
+				<input class="search-field" type="search" name="search" placeholder="Что ищем?">
 
 				<a class="enter">Вход</a>
 				<form class="enter-form" action="#" method="POST">
@@ -52,11 +56,10 @@
 					<a href="#">Забыли пароль?</a>
 					<a href="#">Новая регистрация</a>
 				</form>
-
+				<a class="count">Пусто</a>
 				<form class="basket">
-					<p>Пусто</p>
 					<p>
-						<span>Итого:</span>
+						<p>Итого: руб.</p>
 						<input class="style-button" type="submit" value="Оформить заказ">
 					</p>
 				</form>
@@ -130,7 +133,7 @@
 				</form>
 		</fieldset>
 		</section>
-		<section>
+		<section class="catalog-list-iceceram">
 
 			<ul class="catalog-item">
 				<li>
