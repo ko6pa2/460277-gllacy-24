@@ -896,6 +896,7 @@ body main section h1{
 }
 .filter select:hover,
 .filter select:focus {
+	background-color: white;
 	color: black;
 	outline: none;
 	border: 1px black solid;
