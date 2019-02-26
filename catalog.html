@@ -15,14 +15,13 @@
 						<img class="logo" src="img/logo.svg" alt="GllacyShop" >
 					</a>
 				</div>
-				<div class="block-list">
 				<ul class="site-navigation">
 					<li>
-						<a class="navigation-item current-page" href="catalog.html">Каталог</a>
-						<ul>
+						<a class="navigation-item current-page" href="#">Каталог</a>
+						<ul class="drop-down-menu">
 							<li class="new-icecream">Новинки</li>
 							<li>
-								<a class="list-item" href="#">Сливочное</a>
+								<a class="list-item" href="catalog.html">Сливочное</a>
 							</li>
 							<li>
 								<a class="list-item" href="#">Щербеты</a>
@@ -36,99 +35,106 @@
 						</ul>
 					</li>
 					<li>
-						<a class="navigation-item" href="delivery.html"> Доставка и оплата</a>
+						<a class="navigation-item" href="#"> Доставка и оплата</a>
 					</li>
 					<li>
-						<a class="navigation-item" href="about-us">О компании</a>
+						<a class="navigation-item" href="#">О компании</a>
 					</li>
 				</ul>
-				</div>
 			</div>
 			<div class="top-right-nav">
 				<a href="#" class="search"></a>
-				<input class="search-field" type="search" name="search" placeholder="Что ищем?">
+				<p>
+					<input class="search-field" type="search" name="search" placeholder="Что ищем?">
+				</p>
 
 				<a class="enter">Вход</a>
-				<form class="enter-form" action="#" method="POST">
-					<input type="email" placeholder="Электронная почта" name="email">
-					<input type="password" name="password">
-					<input class="style-button" type="submit" name="submit" value="Войти">
-					<a href="#">Забыли пароль?</a>
-					<a href="#">Новая регистрация</a>
-				</form>
+				<div class="enter-form">
+					<form class="login-form" action="#" method="POST">
+						<input type="email" placeholder="Электронная почта" name="email">
+						<input type="password" placeholder="Пароль" name="password">
+						<div class="footer-enter">
+							<input class="style-button" type="submit" name="submit" value="Войти">
+							<p>
+								<a href="#">Забыли пароль?</a>
+								<a href="#">Новая регистрация</a>
+							</p>
+						</div>
+					</form>
+				</div>
 				<a class="count">Пусто</a>
-				<form class="basket">
-					<p>
-						<p>Итого: руб.</p>
-						<input class="style-button" type="submit" value="Оформить заказ">
-					</p>
-				</form>
+				<div class="basket-form">
+					<form class="basket">
+						<p>
+							<p>Итого: руб.</p>
+							<input class="style-button" type="submit" value="Оформить заказ">
+						</p>
+					</form>
+				</div>
 			</div>
-
 		</nav>
 	</header>
 	<main>
 		<section class="navigation">
 			<div>
 				<ul>
-					<li><a href="#">Главная</a></li>
+					<li><a href="index.html">Главная</a></li>
 					<li><a href="#">Каталог</a></li>
 					<li><a href="#">Сливочное</a></li>	
 				</ul>
 			</div>
-			<div>
 				<p> 
 					С 10 до 20, ежедневно<br>
 					<span class="bld-number">8 812 450-25-25</span>
 				</p>
-			</div>
 		</section>
 		<section>
 			<h1>Сливочное мороженое</h1>
-			<fieldset>
+			<fieldset class="catalog-form">
 				<form action="#" class="filter" method="POST">
-					<label for="sort">
-						<span>Сортировка:</span>
-						<select name="sort" id="sort">
+					<div class="headers-form">
+						<select class="sort" name="sort">
 							<option value="popular" selected>По популярности</option>
 							<option value="#">2</option>
 							<option value="#">3</option>
 						</select>
-					</label>
-					<label for="range">Цена:
-						<input id="range" type="range" min="300" max="5000" step="100">
-					</label>
-					<fieldset class="fat-percent">
-							<span>Жирность:</span>
-							<input type="radio" id="zero" value="0" name="fat">
-							<label for="zero">0%</label>
+					</div>
+					<div class="headers-form">
+						<input type="range" min="300" max="5000" step="100">
+					</div>
+					<div class="headers-form">
+						<fieldset class="fat-percent">
+								<input type="radio" id="zero" value="0" name="fat">
+								<label for="zero">0%</label>
 
-							<input type="radio" id="till-10" value="till-10" name="fat">
-							<label for="till-10">До 10%</label>
+								<input type="radio" id="till-10" value="till-10" name="fat">
+								<label for="till-10">До 10%</label>
 
-							<input type="radio" id="till-30" value="till-30" name="fat">
-							<label for="till-30">До 30%</label>
+								<input type="radio" id="till-30" value="till-30" name="fat">
+								<label for="till-30">До 30%</label>
 
-							<input type="radio" id="more-30" value="more-30" name="fat">
-							<label for="more-30">Выше 30%</label>
-					</fieldset>
-					<fieldset class="additives">
-						<span>Наполнители</span>
-						<input id="chocolate" type="checkbox"  name="chocolate" value="chocolate">
-						<label for="chocolate">Шоколад</label>
+								<input type="radio" id="more-30" value="more-30" name="fat">
+								<label for="more-30">Выше 30%</label>
+						</fieldset>
+					</div>
+					<div class="headers-form">
+						<fieldset class="additives">
+							<input id="chocolate" type="checkbox"  name="chocolate" value="chocolate">
+							<label for="chocolate">Шоколад</label>
 
-						<input id="sugar" type="checkbox" name="sugar" value="sugar">
-						<label for="sugar">Сахарные присыпки</label>
-	
-						<input id="fruits" type="checkbox" name="fruits" value="fruits">
-						<label for="fruits">Фрукты</label>
+							<input id="sugar" type="checkbox" name="sugar" value="sugar">
+							<label for="sugar">Сахарные присыпки</label>
+		
+							<input id="fruits" type="checkbox" name="fruits" value="fruits">
+							<label for="fruits">Фрукты</label>
 
-						<input id="sirop" type="checkbox" name="sirop" value="sirop">
-						<label for="sirop">Сироп</label>
+							<input id="sirop" type="checkbox" name="sirop" value="sirop">
+							<label for="sirop">Сироп</label>
 
-						<input id="jam" type="checkbox" name="jam" value="jam">
-						<label for="jam">Джем</label>
-					</fieldset>
+							<input id="jam" type="checkbox" name="jam" value="jam">
+							<label for="jam">Джем</label>
+						</fieldset>
+					</div>
 					<input class="button-form" type="submit" value="Применить">
 				</form>
 		</fieldset>
@@ -137,7 +143,7 @@
 
 			<ul class="catalog-item">
 				<li>
-					<img src="img/ice-cream-1.png" alt="icecream">
+					<img width="" src="img/ice-cream-1.png" alt="icecream">
 					<p class="cost">310₽/<small>кг</small></p>
 					<a href="#" class="link-ice-cream">
 						Сливочное с апельсиновым джемом и цитрусовой стружкой
@@ -235,9 +241,8 @@
 			</ul>
 		</section>
 		<section>
-			<div>
 				<ul class="paginator">
-					<li >
+					<li>
 						<a href="#"><</a>
 					</li>
 					<li>
@@ -259,28 +264,27 @@
 						<a href="#">></a>
 					</li>
 				</ul>
-			</div>
 		</section>
 	</main>
 
-		<footer>
+	<footer>
 		<div class="footer-social">
 			<ul>
 				<li>
-					<a href="#" class="social-button" aria-label="Магазин глейси в твиттере"></a>
+					<a href="#" class="social-button" aria-label="Магазин глейси в твиттере"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38"><defs><path id="4rbva" d="M45.925 1579.237c10.284 0 18.62 8.336 18.62 18.62 0 10.283-8.336 18.619-18.62 18.619-10.283 0-18.62-8.336-18.62-18.62 0-10.283 8.337-18.619 18.62-18.619zm-15.752 18.682c0 8.667 7.026 15.692 15.692 15.692s15.691-7.025 15.691-15.692c0-8.666-7.025-15.691-15.691-15.691s-15.692 7.025-15.692 15.691z"/><path id="4rbvb" d="M53.944 1594.806c-.251 6.512-3.463 10.825-10.992 10.695h-.486c-.447 0-4.543-.443-5.344-1.822 2.479.19 4.247-.405 5.12-1.135-1.048-.289-2.923-.46-3.251-2.846.384.104.618.22 1.299.113-1.307-.823-2.758-1.518-2.679-3.64.311.316 1.164.517 1.46.456-.768-.233-2.149-3.242-.974-4.778 1.984 1.79 4.075 3.48 7.804 3.64.227-2.212 1.24-3.696 3.168-4.321 1.84-.479 3.255.26 3.901 1.137.737-.224 1.453-.466 2.193-.684-.004.832-.569 1.462-.935 1.707.747.165 1.423-.474 1.423-.474-.184.962-1.094 1.724-1.707 1.952zM46 1582c-8.836 0-16 7.164-16 16 0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16z"/></defs><g><g transform="translate(-27 -1579)"><g opacity=".5"><use fill="#fff" xlink:href="#4rbva"/></g><g><g opacity=".8"><g opacity=".8"><use fill="#fff" xlink:href="#4rbvb"/></g></g></g></g></g></svg></a>
 				</li>
 				<li>
-					<a href="#" class="social-button" aria-label="Магазин глейси в инстаграмме"></a>
+					<a href="#" class="social-button" aria-label="Магазин глейси в инстаграмме"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38"><defs><path id="v56la" d="M95.925 1579.237c10.284 0 18.62 8.336 18.62 18.62 0 10.283-8.336 18.619-18.62 18.619-10.283 0-18.62-8.336-18.62-18.62 0-10.283 8.337-18.619 18.62-18.619zm-15.752 18.682c0 8.667 7.026 15.692 15.692 15.692s15.691-7.025 15.691-15.692c0-8.666-7.025-15.691-15.691-15.691s-15.692 7.025-15.692 15.691z"/><path id="v56lb" d="M100.916 1598a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396v-6.838h-.897c.086.367.137.746.137 1.14z"/><path id="v56lc" d="M98.638 1592.3h3.039v3.039h-3.039zm-2.659 8.357a2.662 2.662 0 0 0 2.659-2.659 2.662 2.662 0 0 0-2.659-2.659 2.662 2.662 0 0 0-2.659 2.659 2.662 2.662 0 0 0 2.659 2.659z"/><path id="v56ld" d="M103.965 1603.707a2.286 2.286 0 0 1-2.28 2.28H90.28a2.286 2.286 0 0 1-2.28-2.28v-11.404a2.287 2.287 0 0 1 2.28-2.28h11.404a2.287 2.287 0 0 1 2.28 2.28v11.404zM96 1582c-8.836 0-16 7.164-16 16 0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16z"/></defs><g><g transform="translate(-77 -1579)"><g opacity=".5"><use fill="#fff" xlink:href="#v56la"/></g><g><g opacity=".8"><g opacity=".8"><use fill="#fff" xlink:href="#v56lb"/></g><g opacity=".8"><use fill="#fff" xlink:href="#v56lc"/></g><g opacity=".8"><use fill="#fff" xlink:href="#v56ld"/></g></g></g></g></g></svg></a>
 				</li>
 				<li>
-					<a href="#" class="social-button" aria-label="Магазин глейси в фейсбуке"></a>
+					<a href="#" class="social-button" aria-label="Магазин глейси в фейсбуке"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38"><defs><path id="qoioa" d="M144.925 1579.237c10.284 0 18.62 8.336 18.62 18.62 0 10.283-8.336 18.619-18.62 18.619-10.283 0-18.62-8.336-18.62-18.62 0-10.283 8.337-18.619 18.62-18.619zm-15.752 18.682c0 8.667 7.025 15.692 15.692 15.692 8.666 0 15.691-7.025 15.691-15.692 0-8.666-7.025-15.691-15.691-15.691-8.667 0-15.692 7.025-15.692 15.691z"/><path id="qoiob" d="M149.062 1591.455h-3.021v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H140v-3.445h3.021v-3.444c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445zM145 1582c-8.836 0-16 7.163-16 16s7.164 16 16 16c8.837 0 16-7.164 16-16s-7.163-16-16-16z"/></defs><g><g transform="translate(-126 -1579)"><g opacity=".5"><use fill="#fff" xlink:href="#qoioa"/></g><g><g opacity=".8"><g opacity=".8"><use fill="#fff" xlink:href="#qoiob"/></g></g></g></g></g></svg></a>
 				</li>
 				<li>
-					<a href="#" class="social-button" aria-label="Магазин глейси во вконтакте"></a>
+					<a href="#" class="social-button" aria-label="Магазин глейси во вконтакте"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38"><defs><path id="co6pa" d="M193.925 1579.237c10.284 0 18.62 8.336 18.62 18.62 0 10.283-8.336 18.619-18.62 18.619-10.283 0-18.62-8.336-18.62-18.62 0-10.283 8.337-18.619 18.62-18.619zm-15.752 18.682c0 8.667 7.025 15.692 15.692 15.692 8.666 0 15.691-7.025 15.691-15.692 0-8.666-7.025-15.691-15.691-15.691-8.667 0-15.692 7.025-15.692 15.691z"/><path id="co6pb" d="M196.116 1599.086c-.282-.08-.672-.125-1.166-.132-.517-.006-1.033-.009-1.55-.009h-.79v3.493h.264c1.014 0 1.74-.003 2.18-.009a3.2 3.2 0 0 0 1.212-.245c.377-.157.633-.364.774-.625.141-.26.214-.562.214-.9 0-.446-.088-.788-.261-1.03-.17-.24-.464-.423-.877-.543zm-1.481-2.589c.402-.019.719-.082.951-.188.326-.145.54-.33.641-.559.101-.229.15-.496.15-.797 0-.232-.058-.465-.174-.697-.116-.232-.322-.405-.617-.517-.264-.1-.592-.155-.984-.165-.55-.01-1.101-.015-1.652-.014h-.339v2.965h.565c.571 0 1.057-.009 1.459-.028z"/><path id="co6pc" d="M200.592 1602.531a3.73 3.73 0 0 1-1.123 1.327 5.25 5.25 0 0 1-1.821.886c-.662.176-1.5.264-2.517.264h-6.116v-14.021h5.438c1.13 0 1.956.038 2.478.113.544.082 1.07.25 1.56.5.533.27.928.632 1.188 1.087.26.455.392.975.392 1.558 0 .678-.18 1.278-.536 1.795-.357.518-.862.92-1.516 1.208v.075c.917.182 1.641.559 2.178 1.13.536.571.806 1.325.806 2.261 0 .678-.138 1.283-.41 1.817zM194 1582c-8.836 0-16 7.164-16 16 0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16z"/></defs><g><g transform="translate(-175 -1579)"><g opacity=".5"><use fill="#fff" xlink:href="#co6pa"/></g><g><g opacity=".8"><g opacity=".8"><use fill="#fff" xlink:href="#co6pb"/></g><g opacity=".8"><use fill="#fff" xlink:href="#co6pc"/></g></g></g></g></g></svg></a>
 				</li>
 			</ul>
 		</div>
-		<nav class="footer-navigation">
+		<div class="footer-navigation">
 			<ul class="footer-list">
 				<li>
 					<a href="#">Для поставщиков</a>
@@ -295,7 +299,7 @@
 					<a href="#">Экологические стандарты</a>
 				</li>
 			</ul>
-		</nav>
+		</div>
 		<div>
 			<a class="logo-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
 				<img src="img/logo-htmlacademy.svg" alt="Html Academy">
