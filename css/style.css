@@ -16,6 +16,11 @@ form {
 ul{
 	list-style: none;
 }
+.container{
+	position: relative;
+	width: 1150px;
+	margin: 0px auto;
+}
 .container.bgc {
 	position: relative;
 	width: 1150px;
@@ -539,7 +544,6 @@ a{
 	height: 320px;
 	position: relative;
 	padding-top: 10px;
-	margin-left: 13px;
 	z-index: 2;
 }
 .catalog-item li:hover ~ li {
