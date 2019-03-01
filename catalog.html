@@ -43,35 +43,42 @@
 				</ul>
 			</div>
 			<div class="top-right-nav">
-				<a href="#" class="search"></a>
-				<p>
-					<input class="search-field" type="search" name="search" placeholder="Что ищем?">
-				</p>
-
-				<a class="enter">Вход</a>
-				<div class="enter-form">
-					<form class="login-form" action="#" method="POST">
-						<input type="email" placeholder="Электронная почта" name="email">
-						<input type="password" placeholder="Пароль" name="password">
-						<div class="footer-enter">
-							<input class="style-button" type="submit" name="submit" value="Войти">
-							<p>
-								<a href="#">Забыли пароль?</a>
-								<a href="#">Новая регистрация</a>
-							</p>
-						</div>
-					</form>
+				<div class="contain-popup">
+					<a href="#" class="search"></a>
+					<p>
+						<input class="search-field" type="search" name="search" placeholder="Что ищем?">
+					</p>
 				</div>
-				<a class="count">Пусто</a>
-				<div class="basket-form">
-					<form class="basket">
-						<p>
-							<p>Итого: руб.</p>
+				<div class="contain-popup">
+					<a class="enter">Вход</a>
+					<div class="enter-form">
+						<form class="login-form" action="#" method="POST">
+							<input type="email" placeholder="Электронная почта" name="email">
+							<input type="password" placeholder="Пароль" name="password">
+							<div class="footer-enter">
+								<input class="style-button" type="submit" name="submit" value="Войти">
+								<p>
+									<a href="#">Забыли пароль?</a>
+									<a href="#">Новая регистрация</a>
+								</p>
+							</div>
+						</form>
+					</div>
+				</div>
+					<a class="count">2 товара</a>
+					<div class="basket-form">
+						<form class="basket">
+							<div class="basket-ice-cream">
+								<img src="img/ice-cream-1.png" width="33" height="33" alt=""><div class="selected-ice-cream">Пломир с апельсиновым джемом</div><div class="weight">1,5кг x 200</div><div class="price">300руб.</div>
+							</div>
+							<div class="basket-ice-cream">
+								<img src="img/ice-cream-3.png" width="33" height="33" alt=""><div class="selected-ice-cream">Клубничный пломбир с присыпкой из белого шоколада</div><div class="weight">1,5кг x 300</div><div class="price">450руб.</div>
+							</div>
+							<p class="summary-cost">Итого: 750 руб.</p>
 							<input class="style-button" type="submit" value="Оформить заказ">
-						</p>
-					</form>
+						</form>
+					</div>
 				</div>
-			</div>
 		</nav>
 	</header>
 	<main>
@@ -83,28 +90,33 @@
 					<li><a href="#">Сливочное</a></li>	
 				</ul>
 			</div>
-				<p> 
-					С 10 до 20, ежедневно<br>
-					<span class="bld-number">8 812 450-25-25</span>
-				</p>
+			<p> 
+				С 10 до 20, ежедневно<br>
+				<span class="bld-number">8 812 450-25-25</span>
+			</p>
 		</section>
 		<section>
-			<h1>Сливочное мороженое</h1>
+			<h1 class="gen-header">Сливочное мороженое</h1>
 			<fieldset class="catalog-form">
 				<form action="#" class="filter" method="POST">
-					<div class="headers-form">
-						<select class="sort" name="sort">
+					<div class="form-item">
+						<label class="header-form" for="sort">Сортировка:</label>
+						<select id="sort" class="sort" name="sort">
 							<option value="popular" selected>По популярности</option>
 							<option value="#">сначала недорогие</option>
 							<option value="#">сначала дорогие</option>
 							<option value="#">по жирности</option>
 						</select>
 					</div>
-					<div class="headers-form">
-						<input type="range" min="300" max="5000" step="100">
+					<div class="form-item">
+						<label class="header-form" for="range">Цена: 100 руб. - 500 руб.</label>
+						<div id="range" class="range" >
+							<div class="range-line"></div>
+						</div>
 					</div>
-					<div class="headers-form">
-						<fieldset class="fat-percent">
+					<div class="form-item">
+						<label class="header-form" for="fat-percent">Жирность:</label>
+						<fieldset id="fat-percent" class="fat-percent">
 								<input type="radio" id="zero" value="0" name="fat">
 								<label for="zero">0%</label>
 
@@ -118,8 +130,9 @@
 								<label for="more-30">Выше 30%</label>
 						</fieldset>
 					</div>
-					<div class="headers-form">
-						<fieldset class="additives">
+					<div class="form-item">
+						<label class="header-form" for="additives">Наполнители:</label>
+						<fieldset id="additives" class="additives">
 							<input id="chocolate" type="checkbox"  name="chocolate" value="chocolate">
 							<label for="chocolate">Шоколад</label>
 
@@ -243,25 +256,25 @@
 		</section>
 		<section>
 				<ul class="paginator">
-					<li>
+					<li class="paginator-item" disabled>
 						<a href="#"><</a>
 					</li>
-					<li>
+					<li class="paginator-current paginator-item">
 						<a href="#">1</a>
 					</li>
-					<li>
+					<li class="paginator-item">
 						<a href="#">2</a>
 					</li>
-					<li>
+					<li class="paginator-item">
 						<a href="#">3</a>
 					</li>
-					<li>
+					<li class="paginator-item">
 						<a href="#">4</a>
 					</li>
-					<li>
+					<li class="paginator-item">
 						<a href="#">5</a>
 					</li>
-					<li>
+					<li class="paginator-item">
 						<a href="#">></a>
 					</li>
 				</ul>
