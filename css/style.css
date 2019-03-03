@@ -57,13 +57,11 @@ textarea:hover {
 	border:2px solid #c7c6c5;
 	border-color: #c7c6c5;
 }
-
 /*----- header -----*/
 .main-navigation {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	/* align-items: center; */
 }
 .top-left-nav{
 	display: flex;
@@ -71,9 +69,6 @@ textarea:hover {
 }
 /*---- logotype -*/
 
-.logo {
-	/* margin-right: 18px; */
-}
 a{
 	text-decoration:none;
 	color: white;
@@ -81,6 +76,8 @@ a{
 
 .current-page{
 	color: black;
+
+	border-radius: 25px;
 	background-color: #d07058;
 	/* padding-top: 0; */
 }
@@ -96,8 +93,17 @@ a{
 	line-height: 18px;
 	padding: 7px 14px 6px 14px;
 	color: white;
-	border-radius: 25px;
-	text-decoration: underline;
+}
+.navigation-item:not(.current-page)::after {
+	content:"";
+	width: 80%;
+	bottom: 0;
+	left:15px;
+	border-bottom:1px solid grey;
+	border-radius: 0px;
+}
+.navigation-item:hover:not(.current-page)::after {
+	border:none;
 }
 
 .navigation-item::after{
@@ -111,6 +117,7 @@ a{
 
 .navigation-item:active,
 .navigation-item:hover {
+	border-radius: 25px;
 	text-decoration: none;
 	background-color: white;
 	color: black;
@@ -126,7 +133,6 @@ a{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	/* align-items: center; */
 	text-decoration:none;
 	font-weight: normal;
 	position: relative;
@@ -198,7 +204,6 @@ a{
 	position: relative;
 	margin:0;
 	padding: 0;
-	/* padding-right: 0px; */
 }
 
 .search-field {display: none;
@@ -504,7 +509,6 @@ a{
 	position: absolute;
 	margin:0;
 	padding: 0;
-	/* padding-top: 0px; */
 }
 .slide p + a{
 	position: absolute;
@@ -613,7 +617,6 @@ margin-left: 26px;
 	width: 267px;
 	height: 320px;
 	position: relative;
-	/* padding-top: 10px; */
 }
 .hot li img{
 	width: 100%;
@@ -621,7 +624,6 @@ margin-left: 26px;
 .hot li p {
 	position: absolute;
 	top: 209px;
-	/* left: 20px; */
 	padding: 0px;
 	margin: 0px;
 }
@@ -700,7 +702,6 @@ margin-left: 26px;
 	top: 209px;
 	left: -2px;
 	padding: 0px;
-	/* padding-bottom: 9px; */
 	margin: 0px;
 }
 .catalog-item .style-button{
@@ -713,7 +714,6 @@ margin-left: 26px;
 	line-height: 24px;
 	padding: 12px 17px 12px 17px;
 }
-
 .catalog-item li:hover::before{
 	content:'';
 	position: absolute;
@@ -743,29 +743,20 @@ margin-left: 26px;
 	font-size: 33px;
 }
 .link-ice-cream {
-	/* padding-bottom: 10px; */
 	display: inline-block;
 	box-sizing: border-box;
-	/* padding-left: 0px; */
-	/* padding-right: 2px; */
 	width: 257px;
-	/* padding-right: 10px; */
 	font-weight: 500;
 	line-height: 22px;
 	text-decoration: underline;}
 .advantages {
 	margin-top: 41px;
 	padding-bottom: 7px;
-	/* margin-bottom: 40px; */
 	border-radius: 10px;
 	background: url('../img/waffle-big.png') no-repeat;
 }
 .advantages-header {
  	margin: 0px;
- 	/* margin-top: 40px; */
- 	/* padding-top: 25px; */
- 	/* padding-right: 25px; */
- 	/* padding-left: 20px; */
  	padding: 25px 25px 21px 21px;
  	line-height: 30px;
  	font-size: 24px;
@@ -774,23 +765,20 @@ margin-left: 26px;
  .advantages-item {
  	margin:0px;
  	padding-right: 22px;
- 	/* padding-left: 22px; */
  	display: flex;
  	flex-direction: row;
  	flex-wrap: wrap;
- }.advantages-item li:nth-child(odd){
-padding-right: 48px;
+ }
+ .advantages-item li:nth-child(odd){
+		padding-right: 48px;
 }
 .advantages-item li{
  	position: relative;
  	width: 481px;
  	padding: 0;
- 	paddint-top: 12px;
  	padding-bottom: 21px;
  	margin: 0;
  	margin-left: 37px;
- 	/* margin-right: 6px; */
- 	/* margin-bottom: 30px; */
  	line-height: 22px;
  	font-size: 16px;
  	font-weight: normal;
@@ -864,7 +852,6 @@ padding-right: 48px;
 .distribution{
 	width: 560px;
 	height: 220px;
-	
 }
 .distribution p {
 	padding: 0;
@@ -895,11 +882,8 @@ padding-right: 48px;
 	padding: 9px 13px 11px 14px;
 }
 .email{
-	margin-top: 38px;
-	margin-left: 22px;
-	margin-right: 10px;
+	margin: 38px 10px 0 22px;
 	width: 349px;
-	/* height: 45px; */
 	padding: 6px 0px 9px 14px;
 	font-size: 16px;
 	line-height: 24px;
@@ -909,8 +893,6 @@ padding-right: 48px;
 /*------ map block -----*/
 .map {
 	margin-left: -27px;
-	/* height: 0; */
-	/* width: 100px; */
 	position: relative;
 	margin-top: 34px;
 }
@@ -921,10 +903,8 @@ padding-right: 48px;
 	margin: 0px;
 	font-weight: normal;
 	margin-top: 22px;
-	/* margin-bottom: -2px; */
 }
 .map p span{
-	margin-top: 0px;
 	margin-left: 1px;
 	display: inline-block;
 	line-height: 24px;
@@ -936,7 +916,6 @@ padding-right: 48px;
 	position: absolute;
 	top: 63px;
 	right: 0px;
-	/* margin: 60px 20px 60px 900px; */
 	border-radius: 20px;
 	height: 305px;
 	width: 303px;
@@ -958,17 +937,14 @@ padding-right: 48px;
 .footer-social ul{
 	position: relative;
 	margin:0;
-	/* margin-right: 29px; */
 	padding: 0;
 	display: flex;
 	justify-content: flex-start;
 }
-
 .footer-social ul li{
 	margin-top: 16px;
 	margin-right: 10px;
 	width: 40px;
-	/* height: 28px; */
 }
 .footer-social ul li a{
 	opacity: 0.8;
@@ -976,22 +952,18 @@ padding-right: 48px;
 .footer-social ul li a:hover{
 	opacity: 1;
 }
-
 /*----------navig---*/
 .footer-navigation{
 	margin: 0;
-	/* margin-right: 49px; */
 	width: 330px;
 	padding: 0px;
 }
 footer {
-	/* margin-top:50px; */
 	min-height: 90px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-
 .footer-list a:hover {
 	color:#ffbc9e;
 }
@@ -999,7 +971,6 @@ footer {
 	margin: 0 auto;
 	padding: 0px;
 	padding-top: 6px;
-	padding-left: 0px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -1009,7 +980,6 @@ footer {
 	line-height: 18px;
 }
 .footer-list li {
-	/* padding-top: 0px; */
 	flex:150px;
 }
 .bld-number {
@@ -1026,9 +996,7 @@ footer {
 /*------------ html logo footer -------*/
 .logo-html-academy p {
 	margin: 0;
-	/* margin-left: -1px; */
 	padding: 0;
-	/* padding-right: 0px; */
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: normal;
@@ -1055,7 +1023,7 @@ footer {
 }
 .navigation ul {
 	padding: 0;
-	margin:0px;
+	margin:0;
 	display: flex;
 	justify-content: flex-start;
 	color: white;
@@ -1073,7 +1041,6 @@ footer {
 .navigation ul li:first-child{
 	margin-left:0;
 }
-
 .navigation ul li:not(:last-child){
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2)
 }
@@ -1083,17 +1050,14 @@ footer {
 	position: absolute;
 }
 .contacts{
-
 }
 .work-hours{
-	/* width:1px; */
 	padding-right: 3px;
 	display: block;
 	margin-bottom: 2px;
 }
 .gen-header{
 	margin:0px;
-	margin-top: 0px;
 	line-height: 41px;
 	color: white;
 	font-size: 35px;
@@ -1102,7 +1066,6 @@ footer {
 .catalog-form{
 	padding: 0;
 	margin:0;
-	margin-top: 0px;
 	border:none;
 }
 .filter {
@@ -1131,13 +1094,10 @@ footer {
 	position: absolute;
 	top: -16px;
 	left: 17px;
-	/* padding-top: 5px; */
 	display: block;
 	font-size:14px;
 	line-height:6px;
 	font-weight: 500;
-	/* margin-bottom: 10px; */
-	/* padding-left: 30px; */
 }
 /*----form select-----*/
 
@@ -1156,7 +1116,6 @@ footer {
 	appearance: none;
 	background: url('../img/select-svg-white.svg'),#aabcb2;
 	background-position: 166px 14px;
-	/* background-size: 20px; */
 	background-repeat:  no-repeat;
 }
 .filter select:hover,
@@ -1166,12 +1125,7 @@ footer {
 	outline: none;
 	background: url('../img/select-black.svg'),#aabcb2;
 	background-position: 166px 14px;
-	/* background-size: 20px; */
 	background-repeat:  no-repeat;
-}
-.filter select:active{
-
-}
 }
 .filter select option {
 	padding: 15px;
@@ -1198,7 +1152,6 @@ footer {
 	font-weight: 500;
 	padding: 7px 27px 7px 29px;
 }
-
 .button-form:hover{
 	background-color: #fff;
 	color:black;
@@ -1208,7 +1161,6 @@ footer {
 	border:none;
 	box-shadow: inset 0 2px 1px #696969;
 }
-
 .sort{
 	padding: 15px;
 	font-size: 16px;
@@ -1275,7 +1227,6 @@ fieldset .fat-percent{
 	padding: 9px 0px 9px 0px;
 	margin:0px;
 }
-
 .fat-percent input {
 	margin:0;
 	padding: 0;
@@ -1345,7 +1296,6 @@ fieldset.additives{
 	background: url('../img/checkbox-off.svg'),#aabcb2;
 	opacity: 0.8;
 	background-repeat: no-repeat;
-	/* background-position: 0px 0px; */
 }
 .additives label:hover::before{
 	background: url('../img/checkbox-off.svg'),#aabcb2; 
@@ -1379,7 +1329,6 @@ fieldset.additives{
 	width: 20px;
 	height: 20px;
 }
-
 /*------- paginator catalog -------*/
 .paginator{
 	border-bottom: 1px solid grey;
@@ -1426,7 +1375,6 @@ fieldset.additives{
 }
 
 .style-button {
-	/* margin: 0; */
 	background:linear-gradient(#f16743 0%, #e74b36 100%);
 	border-radius: 30px;
 	color: white;
@@ -1475,7 +1423,8 @@ fieldset.additives{
 	border-radius: 5px;
 	width: 480px;
 	z-index: 1000;
-}.location div{
+}
+.location div{
 	margin: 0px 30px 0px 30px;
 	flex-direction: column;
 	display: flex;
