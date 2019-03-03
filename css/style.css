@@ -97,7 +97,7 @@ a{
 .navigation-item:not(.current-page)::after {
 	content:"";
 	width: 80%;
-	bottom: 0;
+	bottom: 6px;
 	left:15px;
 	border-bottom:1px solid grey;
 	border-radius: 0px;
@@ -106,11 +106,11 @@ a{
 	border:none;
 }
 
-.navigation-item::after{
+.navigation-item::before{
 	position: absolute;
 	content:"";
 	bottom:-20px;
-	left: 0;
+	left: 1px;
 	width: 100%;
 	border-bottom:20px solid transparent;
 }
@@ -129,7 +129,7 @@ a{
 	margin:0px;
 	padding:0px;
 	padding-left: 10px;
-	padding-top: 20px;
+	padding-top: 23px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -197,7 +197,7 @@ a{
 /*---- head container---*/
 .top-right-nav {
 	position: relative;
-	margin-top: 20px;
+	margin-top: 23px;
 }
 .contain-popup{
 	display: inline;
@@ -866,7 +866,7 @@ margin-left: 26px;
 
 .distribution {
 	border-radius: 15px;
-	background:  repeating-linear-gradient( 135deg, white 0px, white 7.5px, #fe9e90 7.5px, #fe9e90 15px, white 15px, white 22.5px, #92cdff 22.5px, #92cdff  30px);
+	background:  repeating-linear-gradient( 135deg, white 0px, white 6.5px, #92cdff 6.5px, #92cdff 13px, white 13px, white 19.5px,#fe9e90  19.5px, #fe9e90  26px);
 }
 .white-bgc{
 	margin:5px;
@@ -906,6 +906,7 @@ margin-left: 26px;
 }
 .map p span{
 	margin-left: 1px;
+	margin-bottom: 1px;
 	display: inline-block;
 	line-height: 24px;
 	font-size: 18px;
@@ -928,7 +929,7 @@ margin-left: 26px;
 	margin: 6px 30px 30px 26px;
 }
 .link-callback{
-	margin-top: 28px;
+	margin-top: 25px;
 	padding: 10px 3px 12px 8px;
 	box-sizing: border-box;
 	width: 250px;
@@ -955,7 +956,7 @@ margin-left: 26px;
 /*----------navig---*/
 .footer-navigation{
 	margin: 0;
-	width: 330px;
+	width: 344px;
 	padding: 0px;
 }
 footer {
@@ -970,18 +971,17 @@ footer {
 .footer-list {
 	margin: 0 auto;
 	padding: 0px;
+	margin-left: 17px;
 	padding-top: 6px;
 	display: flex;
-	flex-direction: row;
+	/* flex-direction: row; */
 	flex-wrap: wrap;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 18px;
 }
-.footer-list li {
-	flex:150px;
-}
+.footer-list li {width: 162px;margin-top: 4px;margin-right: -19px;}
 .bld-number {
 	padding: 0;
 	line-height: 24px;
@@ -1003,6 +1003,12 @@ footer {
 	color: white;
 }
 .logo-html-academy p:hover{color:#ffbc9e;}
+.logo-footer{
+
+}
+.logo-footer .logo-html-academy{
+
+}
 /*--- nav catalog ----*/
 
 .navigation {
@@ -1045,7 +1051,7 @@ footer {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2)
 }
 .navigation ul li:not(:last-child)::after{
-	content: "»";
+	content: "Ã‚Â»";
 	right:-15px;
 	position: absolute;
 }
