@@ -1312,17 +1312,17 @@ fieldset.additives{
 .paginator-item:not(:last-child){
 	margin-right: 3px;
 	}
-.paginator-item[disabled]{
+.paginator-item.disabled{
 	opacity: 0.2;
 	cursor:	default;
 }
-.paginator-item[disabled] > *{
+.paginator-item.disabled > *{
 	cursor:	inherit;
 }
-.paginator-item:hover:not(.paginator-current):not([disabled])  {
+.paginator-item:hover:not(.paginator-current):not(.disabled)  {
 	background-color: #aabcb2;;
 }
-.paginator-tem:active:not(.paginator-current):not([disabled]) {
+.paginator-tem:active:not(.paginator-current):not(.disabled) {
 	background-color:white;
 }
 .paginator-current {
