@@ -10,7 +10,6 @@ body {
 svg{
 	color:blue;
 }
-
 form {
 	color: white;
 }
@@ -49,7 +48,13 @@ input:not[type="submit"],
 textarea {
 	border:2px solid #d3d3d2;
 	border-radius: 5px;
+	font-weight: bold;
 }
+
+::-webkit-input-placeholder {font-weight: normal;}
+::-moz-placeholder {font-weight: normal;}
+:-moz-placeholder {font-weight: normal;}
+:-ms-input-placeholder {font-weight: normal;}
 
 input:hover:not[type="submit"],
 textarea:hover {
@@ -68,20 +73,16 @@ textarea:hover {
 	justify-content: flex-start;
 }
 /*---- logotype -*/
-
 a{
 	text-decoration:none;
 	color: white;
 }
-
 .current-page{
 	color: black;
-
 	border-radius: 25px;
 	background-color: #d07058;
-	/* padding-top: 0; */
 }
-..block-logo{
+.block-logo{
 	align-content: flex-start;
 	margin:0;
 	padding: 0;
@@ -96,6 +97,7 @@ a{
 }
 .navigation-item:not(.current-page)::after {
 	content:"";
+	position: absolute;
 	width: 80%;
 	bottom: 6px;
 	left:15px;
@@ -105,7 +107,6 @@ a{
 .navigation-item:hover:not(.current-page)::after {
 	border:none;
 }
-
 .navigation-item::before{
 	position: absolute;
 	content:"";
@@ -114,7 +115,6 @@ a{
 	width: 100%;
 	border-bottom:20px solid transparent;
 }
-
 .navigation-item:active,
 .navigation-item:hover {
 	border-radius: 25px;
@@ -137,7 +137,7 @@ a{
 	font-weight: normal;
 	position: relative;
 }
-.new-icecream{
+.drop-down-menu .new-icecream{
 	text-decoration:none;
 	font-weight: bold;
 	position: relative;
@@ -148,27 +148,31 @@ a{
 	content:"";
 	display: inline-block;
 	bottom:0;
-	left:6px;
+	left: 6px;
 	right:6px;
 	width: 90%;
-	border-bottom: 1px grey solid;}
+	border-bottom: 1px grey solid;
+	}
 .site-navigation li:not(.new-icecream){
 	text-decoration:none;
 	font-weight: normal;
 }
 .drop-down-menu {
+	display: none;
 	border-radius: 5px;
 	padding: 0;
 	margin: 0;
 	text-align: center;
 	background-color: white;
-	display: none;
 	overflow: hidden;
 }
-
 .drop-down-menu li{
 	color:black;
-	padding: 10px 10px 10px 10px;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 4px 21px 0px 19px;
+	text-align: left;
 }
 .drop-down-menu li:not(.new-icecream):hover{
 	background-color: #fbded7;
@@ -182,12 +186,12 @@ a{
 }
 .site-navigation li a:hover + ul {
 	display: block;
-	margin-top: 20px;
+	margin: 12px 0 0 -6px;
 	position: absolute;
 }
 .drop-down-menu:hover {
 	display: block;
-	margin-top: 20px;
+	margin:12px 0 0 -6px;
 	position: absolute;
 }
 .list-item{
@@ -205,12 +209,14 @@ a{
 	margin:0;
 	padding: 0;
 }
-
-.search-field {display: none;
-	width: 309px;
-	padding: 16px 0px 15px 14px;
-	margin: 19px 10px 19px 10px;
+.search-field {
+	display: none;
+	border-radius: 5px;
+	width: 310px;
+	padding: 15px 0px 15px 11px;
+	margin: 18px 16px 20px 17px;
 	border: 1px solid #696969;
+	font-weight: bold;
 }
 .search{
 	line-height: 16px;
@@ -221,11 +227,8 @@ a{
 	background-position: 8px 7px;
 	padding: 8px 25px 6px 8px;
 	border-radius: 25px;
-	/* margin:0; */
-	/* margin-left: 10px; */
 	}
 .search:hover {
-
 	background-position: 0px -1px;
 	background-image: url('../img/loupe-hover.svg');
 }
@@ -234,7 +237,7 @@ a{
 }
 .search + p {
 	position: absolute;
-	bottom: -100px;
+	bottom: -97px;
 	right: 0;
 	background-color: white;
 	display: inline-block;
@@ -243,8 +246,8 @@ a{
 }
 .search:hover + p input {
 	display: block;
+	border: 1px #d3d3d2 solid;
 }
-
 /*----- ENTER -----*/
 .enter{
 	line-height: 16px;
@@ -270,11 +273,11 @@ a{
 	display: none;
 	border-radius: 5px;
 	position: absolute;
-	top:33px;
-	right: 0;
+	top: 30px;
+	right: 3px;
 	background-color: white;
-	width: 280px;
-	height: 216px;
+	width: 278px;
+	height: 214px;
 }
 .login-form {
 	display: flex;
@@ -285,21 +288,23 @@ a{
 	background-color: white;
 }
 .login-form input{
-	width: 220px;
-	margin-bottom: 18px;
+	border: 1px #d3d3d2 solid;
+	width: 225px;
+	margin-bottom: 20px;
 	padding: 14px 0px 12px 15px;
 	font-size: 14px;
 	line-height: 16px;
-	font-weight: normal;
+	font-weight: bold;
 }
 .footer-enter .style-button{
+	border: none;
 	margin:0px;
 	margin-right: 20px;
 	height: 40px;
 	flex-basis: 100px;
-	padding: 13px 25px 17px 26px;
+	padding: 10px 28px 34px 30px;
 	font-weight: bold;
-	line-height: 1em;
+	line-height: 24px;
 	font-size: 14px;
 }
 .footer-enter{
@@ -315,20 +320,21 @@ a{
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: normal;
-	color:black
+	color:black;
+	text-decoration:underline;
 }
 /*----- basket ----*/
 .basket-form{
+	display: none;
 	border-radius: 5px;
 	margin:0;
 	padding: 0;
 	position: absolute;
-	top:32px;
+	top: 30px;
 	right:0px;
 	width: 540px;
-	min-height: 240px;
+	min-height: 242px;
 	background-color: white;
-	display: none;
 }
 .basket {
 	display: flex;
@@ -338,9 +344,8 @@ a{
 	color: black;
 	font-weight: bold;
 	line-height: 18px;
-	width: 510px;
-	margin:20px 15px 0 15px;
-;}
+	width: 525px;
+}
 .count{
 	background-color: white;
 	color:black;
@@ -370,23 +375,18 @@ a{
 	align-items: center;
 }
 .basket input{
-	box-sizing: border-box;
-	height: 45px;
-	align-self: center;
-	padding: 0;
-	width: 170px;
+	padding: 7px 13px 10px 9px;
 }
 .basket-ice-cream{
 	width: 490px;
 	position: relative;
 	padding: 0;
-	margin:0px 15px 20px 0;
-	padding:0 0 0 41px;
+	margin: 16px 15px 6px 0;
+	padding: 0px 0 0 41px;
 }
 .selected-ice-cream{
-	width: 215px;
-	padding: 0;
-	margin:0px 34px 0px 14px;
+	width: 216px;
+	margin: 12px 31px 0px 14px;
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 16px;
@@ -414,13 +414,13 @@ a{
 	background-color: black;
 }
 .weight{
-	margin-right: 33px;
+	margin-top: 2px;
+	margin-right: 31px;
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 16px;
 }
 .price{
-	margin-right: 27px;
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 16px;
@@ -429,9 +429,9 @@ a{
 	align-self: flex-end;
 }
 .summary-cost{
-	width: 510px;
+	width: 529px;
 	padding: 0;
-	margin-top: 20px;
+	margin-top: 24px;
 	text-align: right;
 	position: relative;
 }
@@ -441,32 +441,26 @@ a{
 	left: 18px;
 	width: 488px;
 	border-top: 1px solid #cacac7;
-	
 }
-
-
 .slide{
 	padding-top: 8px;
 	position: relative;
 	z-index: 0;
 	text-align: right;
 }
-
 .slide a {
 	font-size: 32px;
 	font-weight: bold;
 	line-height: 44px;
-	padding: 16px 40px 20px;
+	padding: 9px 40px 11px 40px;
 	border-radius: 40px;
 }
-
 /*----- slider ----*/
 .second-slide{
 	display: none;
 }.third-slide{
 	display: none;
 }
-
 .slider p {
 	vertical-align: top;
 	padding: 10px;
@@ -487,7 +481,6 @@ a{
 	height: 572px;
 	position: relative;
 	color: white;
-	/* padding-top: 6px; */
 }
 .slider img{
 	display:block;
@@ -497,8 +490,8 @@ a{
 	position: absolute;
 	text-align: right;
 	top: 319px;
-	left: 234px;
-	width: 670px;
+	left: 203px;
+	width: 700px;
 	font-size: 60px;
 	font-weight: bold;
 	line-height: 60.35px;
@@ -512,14 +505,11 @@ a{
 }
 .slide p + a{
 	position: absolute;
-	padding-top: 9px;
-	padding-bottom:11px;
+	/* padding:9px 0 11px 0; */
 	top: 469px;
 	left: 435px;
 }
-
 /*--- slider paginator----*/
-
 .slider-paginator{
 	margin:0;
 	padding: 0;
@@ -529,7 +519,6 @@ a{
 	display: flex;
 	flex-direction: row;
 }
-
 .slider-paginator li{
 	margin-right: 8px;
 	width: 19px;
@@ -584,10 +573,7 @@ a{
 	bottom: 30px;
 	right: 20px;
 	padding: 10px 22px 11px 22px;
-	/* padding-left: 19px; */
-	/* padding-right: 23px; */
 }
-
 .hot{
 	margin:0;
 	padding: 0;
@@ -608,7 +594,6 @@ a{
 	color:#ffbc9e;
 }
 .hot li:not(:first-child){
-	
 margin-left: 26px;
 }
 .hot li {
@@ -664,9 +649,6 @@ margin-left: 26px;
 	width: 100px;
 	height: 100px;
 }
-
-
-
 .catalog-item{
  	padding: 0;
  	margin:0;
@@ -730,8 +712,7 @@ margin-left: 26px;
 	display: inline;
 }
 .catalog-list-iceceram{
-	margin-top: 5px;
-	margin-bottom: 60px;
+	margin:5px 0 60px 0;
 }.cost {
 	color:white;
 	font-size: 45px;
@@ -761,16 +742,16 @@ margin-left: 26px;
  	line-height: 30px;
  	font-size: 24px;
  	font-weight: 500;
- }
+}
  .advantages-item {
  	margin:0px;
  	padding-right: 22px;
  	display: flex;
  	flex-direction: row;
  	flex-wrap: wrap;
- }
+}
  .advantages-item li:nth-child(odd){
-		padding-right: 48px;
+	padding-right: 48px;
 }
 .advantages-item li{
  	position: relative;
@@ -783,7 +764,6 @@ margin-left: 26px;
  	font-size: 16px;
  	font-weight: normal;
 }
-
 .advantages-item > li:nth-child(1)::before {
 	content:"";
 	position: absolute;
@@ -824,7 +804,6 @@ margin-left: 26px;
 	background-image: url(../img/thermometer.svg);
 	background-repeat: no-repeat;
 }
-
 .news {
 	margin-right: 26px;
 	width: 560px;
@@ -834,8 +813,7 @@ margin-left: 26px;
 .news h2 {
 	margin: 0;
 	margin-bottom: 4px;
-	padding-top: 23px;
-	padding-left: 20px;
+	padding:23px 0 0 20px;
 	line-height: 22px;
 	font-size: 16px;
 	font-weight: 500;
@@ -854,16 +832,12 @@ margin-left: 26px;
 	height: 220px;
 }
 .distribution p {
-	padding: 0;
-	padding-top: 29px;
-	padding-left: 24px;
-	padding-right: 20px;
+	padding: 29px 20px 0 24px;
 	font-size: 16px;
 	font-weight: normal;
 	line-height: 22px;
 	color: #5a5a5a;
 }
-
 .distribution {
 	border-radius: 15px;
 	background:  repeating-linear-gradient( 135deg, white 0px, white 6.5px, #92cdff 6.5px, #92cdff 13px, white 13px, white 19.5px,#fe9e90  19.5px, #fe9e90  26px);
@@ -882,21 +856,20 @@ margin-left: 26px;
 	padding: 9px 13px 11px 14px;
 }
 .email{
+	border: 1px solid rgba(178, 178, 178, 0.52);
 	margin: 38px 10px 0 22px;
 	width: 349px;
 	padding: 6px 0px 9px 14px;
 	font-size: 16px;
 	line-height: 24px;
 	border-radius: 5px;
-	font-weight: normal;
+	font-weight: bold;
 }
 /*------ map block -----*/
 .map {
-	margin-left: -27px;
+	margin:34px 0 0 -27px;
 	position: relative;
-	margin-top: 34px;
 }
-
 .map p {
 	line-height: 20px;
 	font-size: 14px;
@@ -905,8 +878,8 @@ margin-left: 26px;
 	margin-top: 22px;
 }
 .map p span{
-	margin-left: 1px;
-	margin-bottom: 1px;
+	text-decoration: none;
+	margin:0 0 1px 1px;
 	display: inline-block;
 	line-height: 24px;
 	font-size: 18px;
@@ -934,7 +907,6 @@ margin-left: 26px;
 	box-sizing: border-box;
 	width: 250px;
 } 
-
 .footer-social ul{
 	position: relative;
 	margin:0;
@@ -943,8 +915,7 @@ margin-left: 26px;
 	justify-content: flex-start;
 }
 .footer-social ul li{
-	margin-top: 16px;
-	margin-right: 10px;
+	margin:16px 10px 0 0;
 	width: 40px;
 }
 .footer-social ul li a{
@@ -974,21 +945,18 @@ footer {
 	margin-left: 17px;
 	padding-top: 6px;
 	display: flex;
-	/* flex-direction: row; */
 	flex-wrap: wrap;
-	/* justify-content: space-between; */
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 18px;
 }
-.footer-list li {width: 162px;margin-top: 4px;margin-right: -19px;}
+.footer-list li {width: 170px;margin-top: 4px;margin-right: -27px;}
 .bld-number {
 	padding: 0;
 	line-height: 24px;
 	font-size: 22px;
 	font-weight: bold;
 }
-
 .footer-list li:nth-child(1) {
 	font-weight: bold;
 	list-style-image: url(../img/heart.svg);
@@ -1002,15 +970,10 @@ footer {
 	font-weight: normal;
 	color: white;
 }
-.logo-html-academy p:hover{color:#ffbc9e;}
-.logo-footer{
-
-}
-.logo-footer .logo-html-academy{
-
+.logo-html-academy p:hover{
+	color:#ffbc9e;
 }
 /*--- nav catalog ----*/
-
 .navigation {
 	padding: 0;
 	margin: 0;
@@ -1085,8 +1048,6 @@ footer {
 	font-size: 14px;
 	font-weight: 500;
 }
-
-
 .form-item{
 	position: relative;
 	display: flex;
@@ -1099,14 +1060,13 @@ footer {
 .header-form{
 	position: absolute;
 	top: -16px;
-	left: 17px;
+	left: 16px;
 	display: block;
 	font-size:14px;
 	line-height:6px;
 	font-weight: 500;
 }
 /*----form select-----*/
-
 .filter select{
 	padding: 8px 0px 8px 17px;
 	margin:0px;
@@ -1145,7 +1105,10 @@ footer {
 	font-weight: 500;
 	background-color: #aabcb2;
 }
-
+.label-select{
+	
+margin-left: 11px;
+}
 .filter .button-form {
 	margin-top: 4px;
 	box-sizing: border-box;
@@ -1180,8 +1143,7 @@ footer {
 .range{
 	width: 218px;
 	height: 36px;
-	margin-right: 9px;
-	margin-left: 11px;
+	margin:0 9px 0 11px;
 	background-color: #a6b7ae;
 	position: relative;
 	border-radius: 25px;
@@ -1225,7 +1187,7 @@ footer {
 	background-color: #ababab;
 	border-radius: 100%;
 	position: absolute;
-	right: -11px;
+	right: -8px;
 	top: -8px;
 }
 fieldset .fat-percent{
@@ -1241,7 +1203,7 @@ fieldset .fat-percent{
 }
 .fat-percent label {
 	position: relative;
-	margin-left: 26px;
+	margin-left: 29px;
 }
 .fat-percent label::after {
 	display: none;
@@ -1249,7 +1211,7 @@ fieldset .fat-percent{
 	position: absolute;
 	width: 8px;
 	height: 8px;
-	left: -18px;
+	left: -23px;
 	top:6px;
 	background-color: white;
 	border-radius: 50%;
@@ -1261,7 +1223,7 @@ fieldset .fat-percent{
 .fat-percent input + label::before {
 	content: "";
 	position: absolute;
-	left:-25px;
+	left: -30px;
 	top:-1px;
 	background-color: transparent;
 	width: 14px;
@@ -1282,15 +1244,13 @@ fieldset .fat-percent{
 .fat-percent input:checked +label::after {
 	display: block;
 }
-
-
 fieldset.additives{
 	box-sizing: border-box;
 	padding: 8px 0px 8px 0px;
 	width: 702px;
 }
 .additives label {
-	margin-left: 32px;
+	margin-left: 38px;
 	position: relative;
 }
 .additives label::before {
@@ -1311,11 +1271,12 @@ fieldset.additives{
 }
 .additives input {
 	position: relative;
-	left: 24px;
+	/* left: 0px; */
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 18px;
 	opacity: 0;
+	width: 0px;
 }
 .additives input:checked + label::before {
 	opacity: 0.8;
@@ -1379,7 +1340,6 @@ fieldset.additives{
 	font-weight: 500;
 	text-decoration: none;
 }
-
 .style-button {
 	background:linear-gradient(#f16743 0%, #e74b36 100%);
 	border-radius: 30px;
@@ -1407,7 +1367,6 @@ fieldset.additives{
 	display: flex;
 	margin-top: 38px;
 }
-
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -1422,27 +1381,27 @@ fieldset.additives{
 .location {
 	display: none;
 	position: fixed;
-	top: 80px;
-	left: 594px;
-	min-height: 450px;
+	top: 337px;
+	left: 554px;
+	min-height: 443px;
 	background-color: white;
-	border-radius: 5px;
-	width: 480px;
+	width: 479px;
 	z-index: 1000;
+	border-radius: 10px;
 }
 .location div{
-	margin: 0px 30px 0px 30px;
+	margin: 0px 30px 0px 25px;
 	flex-direction: column;
 	display: flex;
 	flex-wrap: wrap;
 	flex-shrink: 1;
 }
 .location div > *{
-	margin-bottom: 23px;
+	margin-bottom: 18px;
 }
 .location .style-button{
-	margin-left:300px;
-	padding: 12px;
+	margin-left: 291px;
+	padding: 10px 0px 10px 0px;
 }
 .location input:not([type="submit"]) {
 	text-align: left;
@@ -1451,7 +1410,7 @@ fieldset.additives{
 	height: 38px;
 	font-size: 16px;
     line-height: 24px;
-	font-weight: normal;
+	font-weight: bold;
 }
 .location span {
 	color: black;
@@ -1459,20 +1418,15 @@ fieldset.additives{
 	line-height: 28px;
 	font-weight: 500;
 }
-
  .location textarea {
  	width: 400px;
  	height: 140px;
- 	padding-top: 20px;
-	padding-left: 16px;
+ 	padding: 20px 0 0 16px;
     resize: none;
-    margin-right: 0;
-    margin-left: 0;
     line-height: 24px;
 	font-size: 16px;
-	font-weight: normal;
-   } 
-  
+	font-weight: bold;
+   }
    .close-button{ 
    	display: inline;
    	margin:0px;

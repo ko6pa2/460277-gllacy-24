@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="format-detection" content="telephone=no"/>
 	<meta charset="UTF-8">
 	<title>Каталог</title>
 	<link rel="stylesheet" href="css/style.css">
@@ -69,10 +70,10 @@
 					<div class="basket-form">
 						<form class="basket">
 							<div class="basket-ice-cream">
-								<img src="img/ice-cream-1.png" width="33" height="33" alt=""><div class="selected-ice-cream">Пломир с апельсиновым джемом</div><div class="weight">1,5кг x 200</div><div class="price">300руб.</div>
+								<img src="img/ice-cream-1.png" width="33" height="33" alt=""><div class="selected-ice-cream">Пломир с апельсиновым джемом</div><div class="weight">1,5кг x 200 руб.</div><div class="price">300руб.</div>
 							</div>
 							<div class="basket-ice-cream">
-								<img src="img/ice-cream-3.png" width="33" height="33" alt=""><div class="selected-ice-cream">Клубничный пломбир с присыпкой из белого шоколада</div><div class="weight">1,5кг x 300</div><div class="price">450руб.</div>
+								<img src="img/ice-cream-3.png" width="33" height="33" alt=""><div class="selected-ice-cream">Клубничный пломбир с присыпкой из белого шоколада</div><div class="weight">1,5кг x 300 руб.</div><div class="price">450руб.</div>
 							</div>
 							<p class="summary-cost">Итого: 750 руб.</p>
 							<input class="style-button" type="submit" value="Оформить заказ">
@@ -102,14 +103,14 @@
 					<div class="form-item">
 						<label class="header-form" for="sort">Сортировка:</label>
 						<select id="sort" class="sort" name="sort">
-							<option value="popular" selected>По популярности</option>
+							<option value="popular" selected>по популярности</option>
 							<option value="#">сначала недорогие</option>
 							<option value="#">сначала дорогие</option>
 							<option value="#">по жирности</option>
 						</select>
 					</div>
 					<div class="form-item">
-						<label class="header-form" for="range">Цена: 100 руб. - 500 руб.</label>
+						<label class="header-form label-select" for="range">Цена: 100 руб. - 500 руб.</label>
 						<div id="range" class="range" >
 							<div class="range-line"></div>
 						</div>
@@ -121,32 +122,32 @@
 								<label for="zero">0%</label>
 
 								<input type="radio" id="till-10" value="till-10" name="fat">
-								<label for="till-10">До 10%</label>
+								<label for="till-10">до 10%</label>
 
 								<input type="radio" id="till-30" value="till-30" name="fat">
-								<label for="till-30">До 30%</label>
+								<label for="till-30">до 30%</label>
 
 								<input type="radio" id="more-30" value="more-30" name="fat">
-								<label for="more-30">Выше 30%</label>
+								<label for="more-30">выше 30%</label>
 						</fieldset>
 					</div>
 					<div class="form-item">
 						<label class="header-form" for="additives">Наполнители:</label>
 						<fieldset id="additives" class="additives">
 							<input id="chocolate" type="checkbox"  name="chocolate" value="chocolate">
-							<label for="chocolate">Шоколад</label>
+							<label for="chocolate">шоколадные</label>
 
 							<input id="sugar" type="checkbox" name="sugar" value="sugar">
-							<label for="sugar">Сахарные присыпки</label>
+							<label for="sugar">сахарные присыпки</label>
 		
 							<input id="fruits" type="checkbox" name="fruits" value="fruits">
-							<label for="fruits">Фрукты</label>
+							<label for="fruits">фрукты</label>
 
 							<input id="sirop" type="checkbox" name="sirop" value="sirop">
-							<label for="sirop">Сироп</label>
+							<label for="sirop">сиропы</label>
 
 							<input id="jam" type="checkbox" name="jam" value="jam">
-							<label for="jam">Джем</label>
+							<label for="jam">джемы</label>
 						</fieldset>
 					</div>
 					<input class="button-form" type="submit" value="Применить">
