@@ -501,6 +501,7 @@ a {
 	left: 435px;
 }
 /*--- slider paginator----*/
+
 .slider-paginator {
 	margin: 0;
 	padding: 0;
@@ -1291,6 +1292,15 @@ fieldset.additives {
 	height: 20px;
 }
 /*------- paginator catalog -------*/
+.turn-back{
+	position: relative;
+}
+.turn-back::before {
+	content: "<";
+	position: absolute;
+	left:0 ;
+	color: white;
+}
 .paginator {
 	border-bottom: 1px solid grey;
 	display: flex;
