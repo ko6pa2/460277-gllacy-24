@@ -1089,6 +1089,7 @@ footer {
 	background: url('../img/select-black.svg'),#aabcb2;
 	background-position: 166px 14px;
 	background-repeat:  no-repeat;
+	background-color: #ffffff;
 }
 .filter select option {
 	padding: 15px;
