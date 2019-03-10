@@ -1150,9 +1150,9 @@ footer {
 }
 .logo-footer {
 	margin-top: 16px;
-	margin-left: 205px;
+	margin-left: 204px;
 	-ms-flex-item-align: end;
-	    align-self: flex-end;
+	align-self: flex-end;
 }
 /*------------ html logo footer -------*/
 .logo-html-academy p {
@@ -1173,9 +1173,9 @@ footer {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 	color: white;
 	line-height: 16px;
 	font-size: 14px;
@@ -1186,7 +1186,7 @@ footer {
 	margin-bottom: 1px;
 }
 .navigation p {
-	margin: 0;
+	margin: 0 0 0 755px;
 	text-align: right;
 }
 .navigation ul {
@@ -1217,7 +1217,7 @@ footer {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2)
 }
 .navigation li:not(:last-child)::after {
-	content: "»";
+	content: "Â»";
 	right: -15px;
 	position: absolute;
 }
@@ -1290,6 +1290,7 @@ footer {
     display: none;
 }
 .filter select{
+	border:none;
 	padding: 8px 0px 8px 17px;
 	margin: 0px;
 	line-height: 18px;
