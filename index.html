@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-	  	<meta name="format-detection" content="telephone=no"/>
-	    <meta charset="utf-8">
-	    <title>Магазин мороженого "Глейси"</title>
-	    <link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-
+		<meta name="format-detection" content="telephone=no"/>
+		<meta charset="utf-8">
+		<title>Магазин мороженого "Глейси"</title>
+		<link rel="stylesheet" href="css/min-normalize.css">
+		<link rel="stylesheet" href="css/min-style.css">
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9McDjOPMtujpxF4lmBhM19K2j7FtUEvw&callback=initMap" async></script>   
 	</head>
 	<body>
 		<div class="container bgc">
@@ -70,7 +70,7 @@
 					</div>
 				</nav>
 			</header>
-			<h1 class="visually-hidden">Магазин мороженого глейси</h1>		
+			<h1 class="visually-hidden">Магазин мороженого глейси</h1>
 			<main>
 				<section class="catalog">
 					<h2 class="visually-hidden">Каталог магазина</h2>
@@ -186,64 +186,47 @@
 					</section>
 				</div>
 			</main>
-        </div>
-        <div id="map">
-        			 <div class="info">
-						<div>
-							<p>	
-								<span>Адрес главного офиса и офлайн-магазина:</span>
-								<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-							</p>
-							<p>
-								Для заказов по телефону:
-								<b>8 812 450-25-25</b>
-								<span>(с 10 до 20 ежедневно)</span>
-							</p>
-							<a href="#" class="link-callback style-button">Форма обратной связи</a>
-						</div>
-					</div>
-					<h2 class="visually-hidden">Местоположение</h2>
-   				 <script>
-				      var map;
-				      function initMap() {
-				      	var posMark = {lat:59.9391903, lng:30.3272874}
-				      	var pos = {lat:59.937685, lng:30.3475007},
-				        map = new google.maps.Map(document.getElementById('map'), {
-				          center: pos ,
-				          zoom:15
-				        });
-				                var marker = new google.maps.Marker({
-						          map: map,
-						          position: posMark,
-						          title: 'Hello World!',
-						          icon:'img/glacy-icon.svg'
-						        });
-				      }
-		 </script>
-		 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9McDjOPMtujpxF4lmBhM19K2j7FtUEvw&callback=initMap"
-        async defer></script>
-        </div>
+		</div>
+		<div class="info-block">
+			<div class="info">
+				<div>
+					<p>	
+						<span>Адрес главного офиса и офлайн-магазина:</span>
+						<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+					</p>
+					<p>
+						Для заказов по телефону:
+						<b>8 812 450-25-25</b>
+						<span>(с 10 до 20 ежедневно)</span>
+					</p>
+					<a href="#" class="link-callback style-button">Форма обратной связи</a>
+				</div>
+			</div>
+			<h2 class="visually-hidden">Местоположение</h2>
+		</div>
+		<div id="map">
+		</div>
 		<footer>
 			<div class="footer-social">
 				<ul>
 					<li>
 						<a href="#" class="social-button" aria-label="Магазин глейси в твиттере">
-							<img width="32" height="32" src="img/twitter.svg" alt="">
+						<img width="40" height="40" src="img/twitter.svg" alt="">
 						</a>
 					</li>
 					<li>
 						<a href="#" class="social-button" aria-label="Магазин глейси в инстаграмме">
-							<img width="32" height="32" src="img/instagram.svg" alt="">
+						<img width="40" height="40" src="img/instagram.svg" alt="">
 						</a>
 					</li>
 					<li>
 						<a href="#" class="social-button" aria-label="Магазин глейси в фейсбуке">
-							<img width="32" height="32" src="img/facebook.svg" alt="">
+						<img width="40" height="40" src="img/facebook.svg" alt="">
 						</a>
 					</li>
 					<li>
 						<a href="#" class="social-button" aria-label="Магазин глейси во вконтакте">
-							<img width="32" height="32" src="img/vkontakte.svg" alt="">
+						<img width="40" height="40" src="img/vkontakte.svg" alt="">
 						</a>
 					</li>
 				</ul>
@@ -273,13 +256,14 @@
 		</footer>
 		<form class="location callback" action="https://echo.htmlacademy.ru" method="POST">
 			<button class="close-button" aria-label="Закрыть окно обратной связи"></button>
-				<div>
-					<span>Мы обязательно вам ответим!</span>
-					<input type="text" placeholder="Как вас зовут?" name="name">
-					<input type="email" name="email" placeholder="Ваша почта для ответа?">
-					<textarea name="write-something" placeholder="Напишите что-нибудь..."></textarea>
-					<input class="style-button" type="submit" value="Отправить">
-				</div>
-		</form>	
-	  </body>
-  </html>
+			<div>
+				<span>Мы обязательно вам ответим!</span>
+				<input type="text" placeholder="Как вас зовут?" name="name">
+				<input type="email" name="email" placeholder="Ваша почта для ответа?">
+				<textarea name="write-something" placeholder="Напишите что-нибудь..."></textarea>
+				<input class="style-button" type="submit" value="Отправить">
+			</div>
+			<script src="js/min-script.js" async></script>
+		</form>
+	</body>
+</html>

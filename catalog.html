@@ -4,8 +4,8 @@
 		<meta name="format-detection" content="telephone=no"/>
 		<meta charset="UTF-8">
 		<title>Каталог</title>
-	    <link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/min-normalize.css">
+		<link rel="stylesheet" href="css/min-style.css">
 	</head>
 	<body>
 		<div class="container">
@@ -14,7 +14,7 @@
 					<div class="top-left-nav">
 						<div class="block-logo">
 							<a href="index.html">
-								<img width="154" height="64" class="logo" src="img/logo.svg" alt="GllacyShop" >
+							<img width="154" height="64" class="logo" src="img/logo.svg" alt="GllacyShop" >
 							</a>
 						</div>
 						<ul class="site-navigation">
@@ -67,27 +67,27 @@
 								</form>
 							</div>
 						</div>
-							<a class="count">2 товара</a>
-							<div class="basket-form">
-								<form class="basket">
-									<div class="basket-ice-cream">
-										<img src="img/ice-cream-1.png" width="33" height="33" alt="">
-										<div class="selected-ice-cream">Пломир с апельсиновым джемом</div>
-										<div class="weight">1,5кг x 200 руб.</div>
-										<div class="price">300руб.</div>
-									</div>
-									<div class="basket-ice-cream">
-										<img src="img/ice-cream-3.png" width="33" height="33" alt="">
-										<div class="selected-ice-cream">Клубничный пломбир с присыпкой из белого шоколада</div>
-										<div class="weight">1,5кг x 300 руб.</div>
-										<div class="price">450руб.</div>
-									</div>
-									<p class="summary-cost">Итого: 750 руб.</p>
-									<input class="style-button" type="submit" value="Оформить заказ">
-								</form>
-							</div>
+						<a class="count">2 товара</a>
+						<div class="basket-form">
+							<form class="basket">
+								<div class="basket-ice-cream">
+									<img src="img/ice-cream-1.png" width="33" height="33" alt="">
+									<div class="selected-ice-cream">Пломир с апельсиновым джемом</div>
+									<div class="weight">1,5кг x 200 руб.</div>
+									<div class="price">300руб.</div>
+								</div>
+								<div class="basket-ice-cream">
+									<img src="img/ice-cream-3.png" width="33" height="33" alt="">
+									<div class="selected-ice-cream">Клубничный пломбир с присыпкой из белого шоколада</div>
+									<div class="weight">1,5кг x 300 руб.</div>
+									<div class="price">450руб.</div>
+								</div>
+								<p class="summary-cost">Итого: 750 руб.</p>
+								<input class="style-button" type="submit" value="Оформить заказ">
+							</form>
 						</div>
-					</nav>
+					</div>
+				</nav>
 			</header>
 			<main>
 				<section class="navigation">
@@ -96,7 +96,7 @@
 						<ul>
 							<li><a href="index.html">Главная</a></li>
 							<li><a href="#">Каталог</a></li>
-							<li><a href="#">Сливочное</a></li>	
+							<li><a href="#">Сливочное</a></li>
 						</ul>
 					</div>
 					<p class="contacts"> 
@@ -126,17 +126,14 @@
 							<div class="form-item">
 								<label class="header-form">Жирность:</label>
 								<fieldset class="fat-percent">
-										<input type="radio" id="zero" value="0" name="fat">
-										<label for="zero">0%</label>
-
-										<input type="radio" id="till-10" value="till-10" name="fat">
-										<label for="till-10">до 10%</label>
-
-										<input type="radio" id="till-30" value="till-30" name="fat">
-										<label for="till-30">до 30%</label>
-
-										<input type="radio" id="more-30" value="more-30" name="fat">
-										<label for="more-30">выше 30%</label>
+									<input type="radio" id="zero" value="0" name="fat">
+									<label for="zero">0%</label>
+									<input type="radio" id="till-10" value="till-10" name="fat">
+									<label for="till-10">до 10%</label>
+									<input type="radio" id="till-30" value="till-30" name="fat">
+									<label for="till-30">до 30%</label>
+									<input type="radio" id="more-30" value="more-30" name="fat">
+									<label for="more-30">выше 30%</label>
 								</fieldset>
 							</div>
 							<div class="form-item">
@@ -144,23 +141,19 @@
 								<fieldset class="additives">
 									<input id="chocolate" type="checkbox"  name="chocolate" value="chocolate">
 									<label for="chocolate">шоколадные</label>
-
 									<input id="sugar" type="checkbox" name="sugar" value="sugar">
 									<label for="sugar">сахарные присыпки</label>
-				
 									<input id="fruits" type="checkbox" name="fruits" value="fruits">
 									<label for="fruits">фрукты</label>
-
 									<input id="sirop" type="checkbox" name="sirop" value="sirop">
 									<label for="sirop">сиропы</label>
-
 									<input id="jam" type="checkbox" name="jam" value="jam">
 									<label for="jam">джемы</label>
 								</fieldset>
 							</div>
 							<input class="button-form" type="submit" value="Применить">
 						</form>
-				</fieldset>
+					</fieldset>
 				</section>
 				<section class="catalog-list-iceceram">
 					<h2 class="visually-hidden">Каталог сливочного мороженого</h2>
@@ -169,15 +162,15 @@
 							<img width="267" height="267" src="img/ice-cream-1.png" alt="icecream">
 							<p class="cost">310₽<small>/кг</small></p>
 							<a href="#" class="link-ice-cream">
-								Сливочное с апельсиновым джемом и цитрусовой стружкой
+							Сливочное с апельсиновым джемом и цитрусовой стружкой
 							</a>
 							<a class="style-button" href="#">Быстрый просмотр</a>
 						</li>
-						<li>	
+						<li>
 							<img width="267" height="267" src="img/ice-cream-2.png" alt="icecream">
 							<p class="cost">380₽<small>/кг</small></p>
 							<a href="#" class="link-ice-cream">
-								Сливочно-кофейное с кусочками шоколада
+							Сливочно-кофейное с кусочками шоколада
 							</a>
 							<a class="style-button" href="#">Быстрый просмотр</a>
 						</li>
@@ -185,7 +178,7 @@
 							<img width="267" height="267" src="img/ice-cream-3.png" alt="icecream">
 							<p class="cost">355₽<small>/кг</small></p>
 							<a href="#" class="link-ice-cream">
-								Сливочно-клубничное с присыпкой из белого шоколада
+							Сливочно-клубничное с присыпкой из белого шоколада
 							</a>
 							<a class="style-button" href="#">Быстрый просмотр</a>
 						</li>
@@ -193,7 +186,7 @@
 							<img width="267" height="267" src="img/ice-cream-4.png" alt="icecream">
 							<p class="cost">415₽<small>/кг</small></p>
 							<a href="#" class="link-ice-cream">
-								Сливочное крем-брюле с карамельной подливкой
+							Сливочное крем-брюле с карамельной подливкой
 							</a>
 							<a class="style-button" href="#">Быстрый просмотр</a>
 						</li>
@@ -201,7 +194,7 @@
 							<img width="267" height="267" src="img/ice-cream-5.png" alt="icecream">
 							<p class="cost">325₽<small>/кг</small></p>
 							<a href="#" class="link-ice-cream">
-								Сливочное с брусничным джемом
+							Сливочное с брусничным джемом
 							</a>
 							<a class="style-button" href="#">Быстрый просмотр</a>
 						</li>
@@ -209,7 +202,7 @@
 							<img width="267" height="267" src="img/ice-cream-6.png" alt="icecream">
 							<p class="cost">410₽<small>/кг</small></p>
 							<a href="#" class="link-ice-cream">
-								Сливочно-черничное с цельными ягодами черники
+							Сливочно-черничное с цельными ягодами черники
 							</a>
 							<a class="style-button" href="#">Быстрый просмотр</a>
 						</li>
@@ -217,7 +210,7 @@
 							<img width="267" height="267" src="img/ice-cream-7.png" alt="icecream">
 							<p class="cost">375₽<small>/кг</small></p>
 							<a href="#" class="link-ice-cream">
-								Сливочно-лимонное с карамельной присыпкой
+							Сливочно-лимонное с карамельной присыпкой
 							</a>
 							<a class="style-button" href="#">Быстрый просмотр</a>
 						</li>
@@ -225,7 +218,7 @@
 							<img width="267" height="267" src="img/ice-cream-8.png" alt="icecream">
 							<p class="cost">320₽<small>/кг</small></p>
 							<a href="#" class="link-ice-cream">
-								Сливочное с шоколадной стружкой
+							Сливочное с шоколадной стружкой
 							</a>
 							<a class="style-button" href="#">Быстрый просмотр</a>
 						</li>
@@ -233,7 +226,7 @@
 							<img width="267" height="267" src="img/ice-cream-9.png" alt="icecream">
 							<p class="cost">440₽<small>/кг</small></p>
 							<a href="#" class="link-ice-cream">
-								Сливочно-ванильное с кусочками шоколада
+							Сливочно-ванильное с кусочками шоколада
 							</a>
 							<a class="style-button" href="#">Быстрый просмотр</a>
 						</li>
@@ -241,7 +234,7 @@
 							<img width="267" height="267" src="img/ice-cream-10.png" alt="icecream">
 							<p class="cost">435₽<small>/кг</small></p>
 							<a href="#" class="link-ice-cream">
-								Сливочное с ментоловым сиропом
+							Сливочное с ментоловым сиропом
 							</a>
 							<a class="style-button" href="#">Быстрый просмотр</a>
 						</li>
@@ -249,7 +242,7 @@
 							<img width="267" height="267" src="img/ice-cream-11.png" alt="icecream">
 							<p class="cost">355₽<small>/кг</small></p>
 							<a href="#" class="link-ice-cream">	
-								Сливочное с кусочками черного шоколада
+							Сливочное с кусочками черного шоколада
 							</a>
 							<a class="style-button" href="#">Быстрый просмотр</a>
 						</li>
@@ -257,61 +250,61 @@
 							<img width="267" height="267" src="img/ice-cream-12.png" alt="icecream">
 							<p class="cost">420₽<small>/кг</small></p>
 							<a href="#" class="link-ice-cream">
-								Сливочное с мятным сиропом
+							Сливочное с мятным сиропом
 							</a>
 							<a class="style-button" href="#">Быстрый просмотр</a>
 						</li>
 					</ul>
 				</section>
 				<section>
-						<h3 class="visually-hidden">Переключатель страниц</h3>
-						<ul class="paginator">
-							<li class="paginator-item turn-back disabled">
-								<a href="#"></a>
-							</li>
-							<li class="paginator-current paginator-item">
-								<a href="#">1</a>
-							</li>
-							<li class="paginator-item">
-								<a href="#">2</a>
-							</li>
-							<li class="paginator-item">
-								<a href="#">3</a>
-							</li>
-							<li class="paginator-item">
-								<a href="#">4</a>
-							</li>
-							<li class="paginator-item">
-								<a href="#">5</a>
-							</li>
-							<li class="paginator-item">
-								<a href="#">></a>
-							</li>
-						</ul>
+					<h3 class="visually-hidden">Переключатель страниц</h3>
+					<ul class="paginator">
+						<li class="paginator-item turn-back disabled">
+							<a href="#"></a>
+						</li>
+						<li class="paginator-current paginator-item">
+							<a href="#">1</a>
+						</li>
+						<li class="paginator-item">
+							<a href="#">2</a>
+						</li>
+						<li class="paginator-item">
+							<a href="#">3</a>
+						</li>
+						<li class="paginator-item">
+							<a href="#">4</a>
+						</li>
+						<li class="paginator-item">
+							<a href="#">5</a>
+						</li>
+						<li class="paginator-item">
+							<a href="#">></a>
+						</li>
+					</ul>
 				</section>
 			</main>
-	</div>
+		</div>
 		<footer>
 			<div class="footer-social">
 				<ul>
 					<li>
 						<a href="#" class="social-button" aria-label="Магазин глейси в твиттере">
-							<img width="32" height="32" src="img/twitter.svg" alt="">
+						<img width="40" height="40" src="img/twitter.svg" alt="">
 						</a>
 					</li>
 					<li>
 						<a href="#" class="social-button" aria-label="Магазин глейси в инстаграмме">
-							<img width="32" height="32" src="img/instagram.svg" alt="">
+						<img width="40" height="40" src="img/instagram.svg" alt="">
 						</a>
 					</li>
 					<li>
 						<a href="#" class="social-button" aria-label="Магазин глейси в фейсбуке">
-							<img width="32" height="32" src="img/facebook.svg" alt="">
+						<img width="40" height="40" src="img/facebook.svg" alt="">
 						</a>
 					</li>
 					<li>
 						<a href="#" class="social-button" aria-label="Магазин глейси во вконтакте">
-							<img width="32" height="32" src="img/vkontakte.svg" alt="">
+						<img width="40" height="40" src="img/vkontakte.svg" alt="">
 						</a>
 					</li>
 				</ul>
